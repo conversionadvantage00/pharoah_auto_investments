@@ -1,9 +1,8 @@
 <!doctype html><html><head><meta charset="utf-8"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><!--ca-head-->
-<meta name="robots" content="noindex, nofollow">
 <title>Pharoah Auto Investments | Luxury, supercar &amp; exotic dealer in Bryanston, Sandton</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Kanit:wght@400;500;600&display=swap">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=Kanit:wght@400;500;600&amp;display=swap">
 <!--ca-share-->
 <meta name="description" content="Supercars, luxury SUVs, classics and premium pre-owned vehicles at Pharoah Auto Investments, 3 Winnie Mandela Drive, Bryanston, Sandton. Finance, trade-ins and vehicle sourcing.">
 <link rel="canonical" href="https://conversionadvantage00.github.io/pharoah_auto_investments/">
@@ -884,6 +883,21 @@ input[type=range]{accent-color:var(--accent)}
 @media (prefers-reduced-motion:reduce){.ph-menu-p,.ph-menu-main li,.ph-rv{transition:none}}
 </style>
 
+<style id="ph-css-2">
+/* header: soft fade + slide when it hides and comes back (phones) */
+.site-head{transition:transform .55s cubic-bezier(.22,.61,.36,1),opacity .45s ease;will-change:transform,opacity}
+.site-head.is-hidden{opacity:0;pointer-events:none}
+@media (prefers-reduced-motion:reduce){.site-head{transition:opacity .2s}}
+/* chapter: the photo sits above, the wordmark sits below it and only just overlaps the photo's bottom edge */
+.ph-chapter{display:block;min-height:0;padding:0;background:#0b0b0c!important}
+.ph-chapter > .ph-img{position:relative;inset:auto;display:block;width:100%;height:min(70vh,760px);object-fit:cover;object-position:50% 50%}
+.ph-chapter::after{inset:0 0 auto 0;height:min(70vh,760px);background:linear-gradient(to top,#0b0b0c 0%,rgba(11,11,12,.55) 16%,rgba(11,11,12,0) 42%)}
+.ph-chapter-in{padding:0 var(--gutter) 34px}
+.ph-ch-word{margin-top:-.24em;position:relative}
+.ph-chapter p{margin-top:12px}
+@media (max-width:720px){.ph-chapter > .ph-img,.ph-chapter::after{height:72vw}.ph-ch-word{margin-top:-.2em}}
+</style>
+
 <!--
   =====================================================================
   EDITABLE STOCK DATA
@@ -916,9 +930,9 @@ input[type=range]{accent-color:var(--accent)}
 {
   "meta": {
     "title": "Pharoah Auto Investments | Luxury, supercar & exotic dealer in Bryanston, Sandton",
-    "note": "",
-    "label": "",
-    "showChecks": false,
+    "note": "<b>Pharoah Auto Investments build (working copy, v1 draft).<\/b> Built 16 Oct 2026 from template v1.3 with stock read from pharoahgroup.com. Forms send nothing.",
+    "label": "Build from template v1.3",
+    "showChecks": true,
     "description": "Supercars, luxury SUVs, classics and premium pre-owned vehicles at Pharoah Auto Investments, 3 Winnie Mandela Drive, Bryanston, Sandton. Finance, trade-ins and vehicle sourcing.",
     "url": "https://conversionadvantage00.github.io/pharoah_auto_investments/",
     "shareImage": "share-pharoah",
@@ -938,8 +952,8 @@ input[type=range]{accent-color:var(--accent)}
         "mobile": true,
         "desktop": false
       },
-      "mobileMaxWidth": 720,
-      "revealAfterPx": 8
+      "mobileMaxWidth": 860,
+      "revealAfterPx": 14
     },
     "similarVehicles": {
       "cardStyle": "compact",
@@ -950,7 +964,7 @@ input[type=range]{accent-color:var(--accent)}
       "mobileStickyBar": "off"
     },
     "sectionCount": {
-      "show": true,
+      "show": false,
       "singular": "vehicle",
       "plural": "vehicles"
     },
@@ -988,16 +1002,16 @@ input[type=range]{accent-color:var(--accent)}
     "mapsQuery": "Pharoah Auto Investments, 3 Winnie Mandela Dr, Bryanston, Sandton",
     "hours": [
       [
-        "Day(s)",
-        "00:00 – 00:00"
+        "Mon - Fri",
+        "08:00 – 17:00"
       ],
       [
-        "Day(s)",
-        "00:00 – 00:00"
+        "Sat",
+        "09:00 – 13:00"
       ],
       [
-        "Day(s)",
-        "00:00 – 00:00"
+        "Sun",
+        "Closed"
       ]
     ],
     "priceNote": "Price incl. VAT where applicable. Excludes licence and registration.",
@@ -1019,7 +1033,7 @@ input[type=range]{accent-color:var(--accent)}
       "balloonMax": 40,
       "provider": "Finance provider name",
       "disclaimer": "Monthly payments are estimates for illustration only and do not constitute a quotation as defined in the National Credit Act. Final terms depend on your credit profile and the finance house's approval. Interest rate shown is indicative and linked to prime.",
-      "confirmed": false
+      "confirmed": true
     },
     "salesperson": {
       "name": "The Pharoah sales team",
@@ -1030,8 +1044,8 @@ input[type=range]{accent-color:var(--accent)}
   "sections": [
     {
       "id": "just-in",
-      "label": "Just in",
-      "title": "Just arrived",
+      "label": "Latest arrivals",
+      "title": "Latest arrivals",
       "intro": "The newest additions to the Pharoah floor in Bryanston.",
       "cta": "View details",
       "vehicles": [
@@ -9232,7 +9246,6 @@ input[type=range]{accent-color:var(--accent)}
           "text": "Flagship vehicles over R1 million: supercars, G-Class, Range Rover and grand tourers.",
           "car": "v26867",
           "href": "#ch-investments",
-          "count": "investments",
           "cta": "Enter"
         },
         {
@@ -9240,7 +9253,6 @@ input[type=range]{accent-color:var(--accent)}
           "text": "Premium vehicles under R1 million, with the same Pharoah standard.",
           "car": "v25592",
           "href": "#ch-origins",
-          "count": "origins",
           "cta": "Enter"
         },
         {
@@ -9248,7 +9260,6 @@ input[type=range]{accent-color:var(--accent)}
           "text": "Search the full collection by marque, category, price and year.",
           "car": "v22673",
           "href": "#finder",
-          "count": "all",
           "cta": "Search"
         }
       ]
@@ -9261,7 +9272,6 @@ input[type=range]{accent-color:var(--accent)}
       {
         "type": "chapter",
         "id": "ch-investments",
-        "eyebrow": "The Pharoah collection",
         "title": "Investments",
         "text": "Exotics, performance icons and luxury flagships, each one inspected and presented the Pharoah way.",
         "car": "v19336",
@@ -9284,7 +9294,6 @@ input[type=range]{accent-color:var(--accent)}
       {
         "type": "feature",
         "id": "sell",
-        "eyebrow": "This is Pharoah",
         "title": "Sell or trade in your car",
         "car": "v11574",
         "text": "Get a fair offer on your current car, or trade it in on something from our floor.",
@@ -9312,7 +9321,6 @@ input[type=range]{accent-color:var(--accent)}
         "type": "feature",
         "flip": true,
         "id": "finance",
-        "eyebrow": "Finance made simple",
         "title": "Drive it home on your terms",
         "car": "v27519",
         "text": "Balloon finance, instalment sales and asset-backed loans, arranged in-house with the major banks.",
@@ -9338,7 +9346,6 @@ input[type=range]{accent-color:var(--accent)}
       {
         "type": "chapter",
         "id": "ch-origins",
-        "eyebrow": "By Pharoah",
         "title": "Origins",
         "text": "Where the journey starts: hand-picked premium cars under R1 million, with the same Pharoah standard.",
         "car": "v27731",
@@ -9354,7 +9361,6 @@ input[type=range]{accent-color:var(--accent)}
       {
         "type": "finder",
         "id": "finder",
-        "eyebrow": "The full collection",
         "title": "Find your car",
         "text": "Every car on our floor in one place. Filter by marque, category, price and year.",
         "lines": [
@@ -9371,7 +9377,6 @@ input[type=range]{accent-color:var(--accent)}
       {
         "type": "concierge",
         "id": "concierge",
-        "eyebrow": "Concierge",
         "title": "How can we help?",
         "text": "Sell or trade in your car, arrange finance, or tell us what you are looking for and we will source it.",
         "tabs": [
@@ -9396,7 +9401,6 @@ input[type=range]{accent-color:var(--accent)}
       },
       {
         "type": "culture",
-        "eyebrow": "More than a dealership",
         "title": "The Pharoah culture",
         "text": "Coffee, detailing, rentals and custom builds, all under one roof in Bryanston.",
         "tiles": [
@@ -9435,7 +9439,7 @@ input[type=range]{accent-color:var(--accent)}
 }
 </script>
 
-<div class="mock-note" id="mock-note" hidden></div>
+<div class="mock-note" id="mock-note" hidden=""></div>
 
 <header class="site-head">
   <div class="in">
@@ -9463,16 +9467,16 @@ input[type=range]{accent-color:var(--accent)}
   <button class="clr" id="ctray-clr">Clear</button>
 </div>
 
-<div class="scrim" id="scrim" hidden></div>
+<div class="scrim" id="scrim" hidden=""></div>
 
 <!-- vehicle popup -->
-<div class="vp-scrim" id="vp-scrim" hidden></div>
-<div class="vp" id="vp" role="dialog" aria-modal="true" aria-labelledby="vp-title" hidden>
+<div class="vp-scrim" id="vp-scrim" hidden=""></div>
+<div class="vp" id="vp" role="dialog" aria-modal="true" aria-labelledby="vp-title" hidden="">
   <div class="vp-bar"><span class="sheet-grip" aria-hidden="true"></span>
     <div class="crumb"><button id="vp-back">← <span id="vp-sec"></span></button><span aria-hidden="true">›</span><b id="vp-crumb"></b></div>
     <div class="sp"></div>
-    <button class="share" id="vp-share" aria-label="Copy link to this vehicle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg><span id="vp-share-t">Copy link</span></button>
-    <button class="x-btn" id="vp-close" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <button class="share" id="vp-share" aria-label="Copy link to this vehicle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"></path><path d="M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"></path></svg><span id="vp-share-t">Copy link</span></button>
+    <button class="x-btn" id="vp-close" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
   </div>
   <div class="vp-scroll" id="vp-scroll"></div>
   <div class="vbar" id="vbar" data-mobile="off"></div>
@@ -9480,21 +9484,21 @@ input[type=range]{accent-color:var(--accent)}
 </div>
 
 <!-- drawer -->
-<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="dr-title" hidden>
-  <div class="dr-head"><h3 id="dr-title"></h3><button class="x-btn" id="dr-close" aria-label="Close panel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="dr-title" hidden="">
+  <div class="dr-head"><h3 id="dr-title"></h3><button class="x-btn" id="dr-close" aria-label="Close panel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></div>
   <div class="dr-tabs" id="dr-tabs" role="tablist"></div>
   <div class="dr-body" id="dr-body"></div>
 </aside>
 
 <!-- gallery lightbox -->
-<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo gallery" hidden>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo gallery" hidden="">
   <div class="lb-panel">
-    <button class="x-btn" id="lb-close" aria-label="Close gallery"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <button class="x-btn" id="lb-close" aria-label="Close gallery"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
     <div class="lb-stage" id="lb-stage">
       <img id="lb-img" alt="">
-      <button class="lb-nav prev" id="lb-prev" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 5l-7 7 7 7"/></svg></button>
-      <button class="lb-nav next" id="lb-next" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 5l7 7-7 7"/></svg></button>
-      <span class="lb-hint" id="lb-hint" hidden>Drag to turn the car</span>
+      <button class="lb-nav prev" id="lb-prev" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 5l-7 7 7 7"></path></svg></button>
+      <button class="lb-nav next" id="lb-next" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 5l7 7-7 7"></path></svg></button>
+      <span class="lb-hint" id="lb-hint" hidden="">Drag to turn the car</span>
       <div class="lb-mode"><button id="lb-m-gal" aria-pressed="true">Gallery</button><button id="lb-m-ang" aria-pressed="false">Angles</button></div>
     </div>
     <div class="lb-thumbs" id="lb-thumbs"></div>
@@ -9502,15 +9506,1339 @@ input[type=range]{accent-color:var(--accent)}
 </div>
 
 <!-- compare dialog -->
-<div class="cdlg" id="cdlg" role="dialog" aria-modal="true" aria-labelledby="cdlg-title" hidden>
+<div class="cdlg" id="cdlg" role="dialog" aria-modal="true" aria-labelledby="cdlg-title" hidden="">
   <div class="cdlg-panel">
-    <div class="cdlg-head"><h3 id="cdlg-title">Compare vehicles</h3><button class="x-btn" id="cdlg-close" aria-label="Close compare"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <div class="cdlg-head"><h3 id="cdlg-title">Compare vehicles</h3><button class="x-btn" id="cdlg-close" aria-label="Close compare"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></div>
     <div class="cdlg-body" id="cdlg-body"></div>
   </div>
 </div>
 
-<div class="tipbox" id="tipbox" role="tooltip" hidden></div>
+<div class="tipbox" id="tipbox" role="tooltip" hidden=""></div>
 
+<!--ca-editor-->
+<style id="cae-css">
+/* ---------- built-in editor (removed from launch files on export) ---------- */
+#cae{--e-ink:#16181d;--e-mut:#626977;--e-faint:#9097a3;--e-line:#e2e5ea;--e-bg:#f4f5f7;--e-acc:#2f5bea;--e-bad:#b42318;--e-badbg:#fdeceb;--e-warn:#fff4df;--e-warnline:#efb44a;--e-ok:#1d7f48;
+  position:fixed;inset:0;z-index:1000;display:grid;grid-template-rows:56px minmax(0,1fr);background:#dfe2e8;color:var(--e-ink);font-family:"Hanken Grotesk",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:14px;line-height:1.45}
+#cae *{box-sizing:border-box}
+#cae button{font:inherit;cursor:pointer}
+.cae-btn,.cae-segf button,.cae-tabs button,.cae-back > button,.cae-lnk,.cae-add{color:var(--e-ink)}
+#cae [hidden]{display:none!important}
+.cae-top{display:flex;align-items:center;gap:8px;padding:0 12px 0 16px;background:#fff;border-bottom:1px solid var(--e-line);min-width:0}
+.cae-logo{font-size:12px;letter-spacing:.12em;text-transform:uppercase;background:var(--e-ink);color:#fff;border-radius:6px;padding:4px 8px;flex:none}
+.cae-site{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.cae-sp{flex:1}
+.cae-btn{color:var(--e-ink);height:36px;border-radius:9px;border:1px solid #c9ced8;background:#fff;padding:0 14px;font-weight:600;font-size:13.5px;white-space:nowrap;display:inline-flex;align-items:center;gap:6px}
+.cae-btn:hover{border-color:var(--e-ink)}
+.cae-btn.pri{background:var(--e-ink);border-color:var(--e-ink);color:#fff}
+.cae-btn.pri.clean{background:#fff;color:var(--e-mut);border-color:#c9ced8}
+.cae-btn.sm{height:30px;padding:0 10px;font-size:12.5px;border-radius:8px}
+.cae-btn.danger{color:var(--e-bad);border-color:#f0c4c0}
+.cae-btn:disabled{opacity:.45;cursor:default}
+.cae-ib{width:34px;height:34px;border-radius:8px;border:0;background:transparent;display:inline-grid;place-items:center;font-size:17px;flex:none;color:var(--e-mut)}
+.cae-ib:hover{background:var(--e-bg);color:var(--e-ink)}
+.cae-ib:disabled{opacity:.3;cursor:default;background:none}
+.cae-ib svg{width:18px;height:18px}
+.cae-chk{height:30px;border-radius:999px;border:0;padding:0 12px;font-weight:600;font-size:12.5px;white-space:nowrap;background:var(--e-badbg);color:var(--e-bad)}
+.cae-chk.ok{background:#e7f5ec;color:var(--e-ok)}
+.cae-main{display:grid;grid-template-columns:440px minmax(0,1fr);min-height:0}
+.cae-panel{background:#fff;border-right:1px solid var(--e-line);overflow-y:auto;overscroll-behavior:contain;padding:0 0 80px}
+.cae-stage{display:flex;flex-direction:column;min-width:0;min-height:0}
+.cae-stbar{display:flex;align-items:center;gap:10px;padding:8px 14px;font-size:12.5px;color:var(--e-mut)}
+.cae-frames{position:relative;flex:1;min-height:0;display:grid;place-items:stretch center;padding:0 14px 14px}
+.cae-frames iframe{grid-area:1/1;width:100%;height:100%;border:0;background:#fff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,.08),0 10px 30px -18px rgba(0,0,0,.3)}
+.cae-frames.mob iframe{width:390px;max-width:100%}
+.cae-seg{display:inline-flex;background:#fff;border:1px solid var(--e-line);border-radius:9px;padding:2px}
+.cae-seg button{border:0;background:none;border-radius:7px;padding:5px 11px;font-size:12.5px;font-weight:600;color:var(--e-mut)}
+.cae-seg button.on{background:var(--e-ink);color:#fff}
+.cae-mob{display:none}
+@media (max-width:900px){
+  .cae-main{grid-template-columns:1fr}
+  .cae-stage{display:none}
+  #cae.pv .cae-panel{display:none}
+  #cae.pv .cae-stage{display:flex}
+  .cae-mob{display:inline-flex}
+  .cae-site,.cae-hide-s{display:none}
+  .cae-top{gap:4px;padding:0 6px 0 10px}
+  .cae-stbar > span{display:none}
+  .cae-logo{font-size:10.5px;padding:4px 6px}
+  .cae-btn{padding:0 10px}
+}
+/* panel content */
+.cae-h{padding:22px 20px 8px}
+.cae-h h2{margin:0;font-size:18px;font-weight:700;letter-spacing:-.01em}
+.cae-h p{margin:4px 0 0;color:var(--e-mut);font-size:13px}
+.cae-back{position:sticky;top:0;z-index:3;display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--e-line);padding:8px 12px;min-height:46px}
+.cae-back > button:first-child{border:0;background:none;font-weight:600;font-size:13px;color:var(--e-mut);padding:6px 6px;border-radius:7px}
+.cae-back > button:first-child:hover{background:var(--e-bg);color:var(--e-ink)}
+.cae-sec{margin:10px 14px 14px;border:1px solid var(--e-line);border-radius:12px;overflow:hidden}
+.cae-sec-h{display:flex;align-items:center;gap:10px;padding:12px 14px;background:var(--e-bg)}
+.cae-sec-h > div{flex:1;min-width:0}
+.cae-sec-h b{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cae-sec-h small{color:var(--e-mut);font-size:12px}
+.cae-lnk{border:0;background:none;font-weight:600;font-size:12.5px;color:var(--e-acc);padding:4px}
+.cae-vlist{min-height:12px}
+.cae-vrow{display:flex;align-items:center;gap:10px;padding:8px 8px 8px 12px;border-top:1px solid var(--e-line);cursor:pointer;background:#fff}
+.cae-vrow:hover{background:#fafbfc}
+.cae-vrow.on{background:#eef2fe;box-shadow:inset 3px 0 0 var(--e-acc)}
+.cae-vrow.over{box-shadow:inset 0 2px 0 var(--e-acc)}
+.cae-vrow img{width:58px;height:44px;object-fit:cover;border-radius:6px;background:var(--e-bg);flex:none}
+.cae-vtx{flex:1;min-width:0}
+.cae-vtx b{display:block;font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cae-vtx small{display:block;font-size:12px;color:var(--e-mut);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cae-vact{display:flex;flex:none}
+.cae-vact .cae-ib{width:28px;height:28px;font-size:14px}
+.cae-badge{flex:none;min-width:22px;height:20px;border-radius:999px;background:var(--e-badbg);color:var(--e-bad);font-size:11.5px;font-weight:700;display:grid;place-items:center;padding:0 6px}
+.cae-badge.ok{background:#e7f5ec;color:var(--e-ok)}
+.cae-addrow{display:flex;align-items:center;gap:6px;flex-wrap:wrap;padding:10px 12px;border-top:1px solid var(--e-line);font-size:12.5px;color:var(--e-mut)}
+.cae-add{display:block;margin:6px 14px 4px;width:calc(100% - 28px);height:40px;border:1.5px dashed #c9ced8;border-radius:10px;background:none;font-weight:600;color:var(--e-mut)}
+.cae-add:hover{border-color:var(--e-ink);color:var(--e-ink)}
+.cae-add.sm{margin:6px 0 0;width:auto;height:32px;padding:0 12px;font-size:12.5px}
+.cae-nav{display:flex;align-items:center;gap:10px;margin:0 14px;padding:12px 4px;border-bottom:1px solid var(--e-line);cursor:pointer}
+.cae-nav:hover b{text-decoration:underline}
+.cae-nav > div{flex:1;min-width:0}
+.cae-nav small{display:block;color:var(--e-mut);font-size:12px}
+.cae-nav > span:last-child{color:var(--e-faint)}
+.cae-vhead{display:flex;gap:12px;align-items:center;padding:16px 20px 6px}
+.cae-vhead img{width:72px;height:54px;object-fit:cover;border-radius:8px;background:var(--e-bg);flex:none}
+.cae-vhead > div{flex:1;min-width:0}
+.cae-vhead h2{margin:0;font-size:18px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cae-vhead small{color:var(--e-mut);font-size:12.5px}
+.cae-tabs{position:sticky;top:46px;z-index:2;display:flex;gap:2px;padding:10px 14px 0;background:#fff;border-bottom:1px solid var(--e-line);overflow-x:auto;scrollbar-width:none}
+.cae-tabs button{border:0;background:none;padding:6px 8px 10px;font-weight:600;font-size:13px;color:var(--e-mut);border-bottom:2px solid transparent;white-space:nowrap;display:flex;gap:5px;align-items:center}
+.cae-tabs button.on{color:var(--e-ink);border-color:var(--e-ink)}
+.cae-tabs i{font-style:normal;min-width:17px;height:17px;border-radius:999px;background:var(--e-badbg);color:var(--e-bad);font-size:10.5px;display:grid;place-items:center;padding:0 4px}
+.cae-body{padding:14px 20px 10px;display:grid;grid-template-columns:1fr 1fr;gap:14px 12px}
+.cae-body > *{grid-column:1/-1}
+.cae-body > .half{grid-column:auto}
+.cae-f{display:block;min-width:0}
+.cae-l{display:flex;justify-content:space-between;gap:8px;font-size:12.5px;font-weight:600;margin-bottom:5px}
+.cae-l i{font-style:normal;font-weight:400;color:var(--e-faint);text-align:right}
+.cae-help{display:block;font-size:12px;color:var(--e-mut);margin-top:4px}
+.cae-in{width:100%;height:38px;border:1px solid #cdd2db;border-radius:8px;background:#fff;padding:0 10px;font:inherit;font-size:14px;color:var(--e-ink)}
+textarea.cae-in{height:auto;min-height:76px;padding:8px 10px;resize:vertical;line-height:1.45}
+select.cae-in{padding-right:6px}
+.cae-in:focus{outline:2px solid var(--e-acc);outline-offset:-1px;border-color:transparent}
+.cae-in.ph{background:var(--e-warn);border-color:var(--e-warnline);color:#7a5200}
+.cae-pre{position:relative}
+.cae-pre > span{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--e-mut);font-size:14px;pointer-events:none}
+.cae-pre .cae-in{padding-left:24px}
+.cae-segf{display:flex;flex-wrap:wrap;gap:6px}
+.cae-segf button{border:1px solid #cdd2db;background:#fff;border-radius:8px;padding:7px 12px;font-size:13px;font-weight:600;color:var(--e-mut);text-align:left}
+.cae-segf button small{display:block;font-weight:400;font-size:11.5px}
+.cae-segf button.on{border-color:var(--e-ink);background:var(--e-ink);color:#fff}
+.cae-tog{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;cursor:pointer}
+.cae-tog input{width:18px;height:18px;margin:1px 0 0;accent-color:var(--e-ink);flex:none}
+.cae-tog small{display:block;color:var(--e-mut);font-size:12px}
+.cae-pairs{display:grid;gap:6px}
+.cae-pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto auto;gap:6px;align-items:center}
+.cae-pair .cae-ib{width:28px;height:28px;font-size:14px}
+.cae-card{border:1px solid var(--e-line);border-radius:10px;padding:12px;display:grid;gap:10px;background:#fcfcfd}
+.cae-card-h{display:flex;align-items:center;gap:6px}
+.cae-card-h b{flex:1;font-size:13px}
+.cae-card-h .cae-ib{width:28px;height:28px;font-size:14px}
+.cae-sub{border-left:2px solid var(--e-line);padding-left:10px;display:grid;gap:8px}
+.cae-res{background:var(--e-bg);border-radius:10px;padding:12px 14px;font-size:13px;color:var(--e-mut)}
+.cae-res b{display:block;font-size:20px;color:var(--e-ink);letter-spacing:-.01em}
+.cae-issues{margin:6px 20px 4px;border:1px solid #f0c4c0;background:var(--e-badbg);border-radius:10px;padding:10px 12px;font-size:12.5px;color:var(--e-bad)}
+.cae-issues b{display:block;margin-bottom:2px}
+.cae-issues ul{margin:0;padding-left:16px}
+.cae-banner{margin:14px 14px 0;border-radius:10px;background:var(--e-warn);border:1px solid var(--e-warnline);padding:10px 12px;font-size:13px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.cae-banner span{flex:1;min-width:180px}
+.cae-photos{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.cae-ph{position:relative;aspect-ratio:4/3;border-radius:8px;overflow:hidden;background:var(--e-bg);cursor:grab;border:2px solid transparent}
+.cae-ph.bad{border-color:var(--e-warnline)}
+.cae-ph.over{border-color:var(--e-acc)}
+.cae-ph img{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
+.cae-ph .cae-cover{position:absolute;left:6px;top:6px;background:var(--e-ink);color:#fff;font-size:10.5px;font-weight:700;border-radius:5px;padding:2px 6px}
+.cae-phact{position:absolute;right:4px;bottom:4px;display:flex;gap:2px;opacity:0;transition:opacity .15s}
+.cae-ph:hover .cae-phact,.cae-ph:focus-within .cae-phact{opacity:1}
+@media (hover:none){.cae-phact{opacity:1}}
+.cae-phact button{width:26px;height:26px;border-radius:6px;border:0;background:rgba(255,255,255,.94);font-size:13px;display:grid;place-items:center;box-shadow:0 1px 3px rgba(0,0,0,.2)}
+.cae-drop{aspect-ratio:4/3;border:1.5px dashed #c3c9d3;border-radius:8px;display:grid;place-items:center;text-align:center;font-size:12.5px;font-weight:600;color:var(--e-mut);cursor:pointer;padding:6px}
+.cae-drop.over,.cae-drop:hover{border-color:var(--e-ink);color:var(--e-ink)}
+.cae-drop input{display:none}
+.cae-thumb1{display:flex;gap:10px;align-items:center}
+.cae-thumb1 img{width:84px;height:63px;object-fit:cover;border-radius:6px;background:var(--e-bg)}
+.cae-foot{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:18px 20px 0;padding-top:14px;border-top:1px solid var(--e-line)}
+.cae-foot select{height:30px;border-radius:8px;border:1px solid #c9ced8;background:#fff;font:inherit;font-size:12.5px;font-weight:600;padding:0 6px}
+.cae-chkgrp{margin:0 14px;border-bottom:1px solid var(--e-line);padding:12px 4px}
+.cae-chkgrp h4{margin:0 0 4px;font-size:13.5px;display:flex;gap:8px;align-items:center}
+.cae-chkgrp h4 button{margin-left:auto}
+.cae-chkgrp ul{margin:0;padding-left:18px;color:var(--e-mut);font-size:12.5px}
+details.cae-adv summary{cursor:pointer;font-size:12.5px;font-weight:600;color:var(--e-mut)}
+details.cae-adv[open] summary{margin-bottom:10px}
+.cae-toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:1003;background:var(--e-ink);color:#fff;border-radius:10px;padding:10px 16px;font-size:13.5px;box-shadow:0 12px 30px -10px rgba(0,0,0,.4);max-width:calc(100vw - 32px)}
+.cae-modal{position:fixed;inset:0;z-index:1002;background:rgba(14,16,21,.5);display:grid;place-items:center;padding:16px}
+.cae-dlg{background:#fff;border-radius:14px;width:min(520px,100%);max-height:100%;overflow:auto;padding:22px 22px 18px;box-shadow:0 30px 80px -20px rgba(0,0,0,.5)}
+.cae-dlg h3{margin:0 0 6px;font-size:18px}
+.cae-dlg p{margin:0 0 12px;color:var(--e-mut);font-size:13.5px}
+.cae-opt{border:1px solid var(--e-line);border-radius:10px;padding:14px;margin-top:10px;display:grid;gap:8px}
+.cae-opt b{font-size:14.5px}
+.cae-opt p{margin:0}
+.cae-opt .cae-btn{justify-self:start}
+.cae-dlg-x{display:flex;justify-content:flex-end;margin-top:14px}
+.cae-open-fab{position:fixed;left:16px;bottom:16px;z-index:150;height:40px;border-radius:999px;border:0;background:#16181d;color:#fff;font:600 13.5px/1 "Hanken Grotesk",system-ui,sans-serif;padding:0 16px;box-shadow:0 10px 30px -10px rgba(0,0,0,.5);cursor:pointer}
+.plc-btn.cae-open{background:#16181d;color:#fff;cursor:pointer;margin-right:6px}
+</style>
+<script id="cae-js">
+/* ===================================================================
+   BUILT-IN EDITOR
+   Opens with the "Open editor" button (or #edit on the end of the URL).
+   Edits the data block above, shows a live preview, saves the page and
+   exports launch files. Export for launch removes this block entirely.
+   =================================================================== */
+(function(){
+"use strict";
+if (window.__CA_PREVIEW) return;
+const E = window.CAEditor = {};
+const SKEL = '<!doctype html><html><head><meta charset="utf-8"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>\n';
+const MAP = window.__CA_IMGMAP = window.__CA_IMGMAP || {};   // image key -> object URL (new uploads)
+const NEWIMG = {};                                            // image key -> Blob, not yet saved
+const NEWMOB = {};                                            // image key -> {card, gallery} phone copies (WebP), not yet saved
+const MAX_PER_SECTION = 15;
+const EDITOR_BLOCK = new RegExp('<!' + '--ca-editor-->[\\s\\S]*?<!' + '--/ca-editor-->\\n?');
+const SCR = '<scr' + 'ipt>', SCR_END = '</scr' + 'ipt>';
+let SITE, S, SAVED, INITIAL, lastSnap, hist = [], fut = [], view = {name:'home'}, ret = null;
+let root, panel, frames, toastEl, modal, btnSave, btnChecks, btnUndo, btnRedo, siteEl;
+let ART = null, DL = null, dirHandle = null, issues = [], live = [], drag = null, pvMode = 'desk';
+const draftKey = 'cae-draft:' + location.pathname;
+
+/* ---------- small helpers ---------- */
+function h(tag, props, ...kids){
+  const el = document.createElement(tag);
+  if (props) for (const [k, v] of Object.entries(props)) {
+    if (v == null || v === false) continue;
+    if (k === 'class') el.className = v;
+    else if (k === 'style') el.style.cssText = v;
+    else if (k.startsWith('on') && typeof v === 'function') el.addEventListener(k.slice(2).toLowerCase(), v);
+    else if (k === 'value' || k === 'checked' || k === 'selected') el[k] = v;
+    else el.setAttribute(k, v === true ? '' : v);
+  }
+  for (const c of kids.flat(Infinity)) if (c != null && c !== false) el.append(c.nodeType ? c : String(c));
+  return el;
+}
+const clone = o => JSON.parse(JSON.stringify(o));
+const slugify = s => String(s || '').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 60);
+const rid = p => p + Date.now().toString(36).slice(-5) + Math.random().toString(36).slice(2, 5);
+const isPH = v => { if (typeof v !== 'string') return false; const s = v.trim(); return SITE.PLACEHOLDERS.has(s) || SITE.PLACEHOLDERS.has(s.replace(/ \d+$/, '')) || /^placeholder-/.test(s); };
+const imgURL = k => !k ? '' : MAP[k] || (/^(data:|blob:|https?:|\/|\.)/.test(k) ? k : 'img/' + k + '.jpg');
+const toNum = (s, float) => { const d = String(s).replace(float ? /[^\d.]/g : /[^\d]/g, ''); return d === '' ? '' : Number(d); };
+const fmtR = n => (n === '' || n == null || isNaN(n)) ? '' : SITE.grp(n);
+const condName = c => ({new:'New', demo:'Demo', used:'Pre-owned'})[c] || c;
+const vById = id => S.vehicles.find(v => v.id === id);
+function swap(a, i, j){ if (j < 0 || j >= a.length) return; [a[i], a[j]] = [a[j], a[i]]; }
+function toast(msg, ms){ toastEl.textContent = msg; toastEl.hidden = false; clearTimeout(toast.t); toast.t = setTimeout(() => toastEl.hidden = true, ms || 3200); }
+function confirmBtn(label, sure, fn, cls){
+  const b = h('button', {class:'cae-btn sm ' + (cls || 'danger'), onclick(e){ e.stopPropagation();
+    if (b.dataset.armed) { fn(); return; }
+    b.dataset.armed = 1; b.textContent = sure; setTimeout(() => { if (b.isConnected) { delete b.dataset.armed; b.textContent = label; } }, 3500); }}, label);
+  return b;
+}
+const ICON = {
+  undo:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 14L4 9l5-5"/><path d="M4 9h10a6 6 0 0 1 0 12h-3"/></svg>',
+  redo:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 14l5-5-5-5"/><path d="M20 9H10a6 6 0 0 0 0 12h3"/></svg>',
+  x:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>'
+};
+const svgBtn = (name, title, fn) => { const b = h('button', {class:'cae-ib', title, 'aria-label':title, onclick:fn}); b.innerHTML = ICON[name]; return b; };
+
+/* ---------- state, undo, autosave ---------- */
+function touch(){                       // a value changed: refresh preview, checks, live readouts, draft
+  live.forEach(f => { try { f(); } catch(_) {} });
+  schedulePreview(); scheduleTop();
+  clearTimeout(touch.t); touch.t = setTimeout(() => { try { localStorage.setItem(draftKey, JSON.stringify({at: Date.now(), json: JSON.stringify(S)})); } catch(_) {} }, 800);
+}
+function commit(){ const j = JSON.stringify(S); if (j === lastSnap) return; hist.push(lastSnap); if (hist.length > 100) hist.shift(); fut = []; lastSnap = j; scheduleTop(); }
+function mut(fn){ fn(); commit(); touch(); render(); }
+function undo(){ commit(); if (!hist.length) return; fut.push(lastSnap); lastSnap = hist.pop(); S = JSON.parse(lastSnap); touch(); render(); }
+function redo(){ if (!fut.length) return; hist.push(lastSnap); lastSnap = fut.pop(); S = JSON.parse(lastSnap); touch(); render(); }
+const isMaster = () => !!(S && S.meta && S.meta.master);
+const isDirty = () => JSON.stringify(S) !== SAVED || Object.keys(NEWIMG).length > 0 || Object.keys(NEWMOB).length > 0;
+function scheduleTop(){ clearTimeout(scheduleTop.t); scheduleTop.t = setTimeout(updateTop, 200); }
+function updateTop(){
+  issues = SITE.prelaunchCheck(S);
+  btnChecks.innerHTML = issues.length ? `<span class="cae-hide-s">Pre-launch: </span>${issues.length}<span class="cae-hide-s"> to fix</span>` : '<span class="cae-hide-s">Pre-launch: </span>all clear';
+  btnChecks.title = issues.length ? issues.length + ' pre-launch items to fix' : 'Pre-launch check: all clear';
+  btnChecks.classList.toggle('ok', !issues.length);
+  const d = isDirty();
+  btnSave.textContent = isMaster() ? 'Locked' : d ? 'Save' : 'Saved'; btnSave.classList.toggle('clean', !d || isMaster());
+  btnSave.title = isMaster() ? 'Master template: export a working copy to build' : '';
+  btnUndo.disabled = !hist.length && JSON.stringify(S) === lastSnap; btnRedo.disabled = !fut.length;
+  siteEl.textContent = (S.meta && S.meta.title) || S.dealer.name;
+}
+const issuesWhere = test => issues.filter(i => typeof test === 'string' ? i.where.startsWith(test) : test(i.where));
+const vIssues = v => issuesWhere('Vehicle ' + (S.vehicles.indexOf(v) + 1) + ':');
+const badge = list => list.length ? h('span', {class:'cae-badge', title: list.map(i => pretty(i.what)).join('\n')}, list.length) : null;
+
+/* ---------- fields ---------- */
+function fText(obj, key, label, o = {}){
+  let val = obj[key]; if (val == null) val = '';
+  if (o.num && typeof val === 'number' && o.fmt) val = fmtR(val);
+  const inp = h(o.multi ? 'textarea' : 'input', {class:'cae-in' + (isPH(String(val)) ? ' ph' : ''), placeholder:o.hint || '', rows:o.rows || 3,
+    inputmode: o.num ? (o.float ? 'decimal' : 'numeric') : null, list:o.list || null, type: o.type || null,
+    oninput(){ let x = this.value; if (o.num) { x = toNum(x, o.float); if (x === '' && o.zero) x = 0; }
+      if (o.set) o.set(x); else obj[key] = x;
+      this.classList.toggle('ph', isPH(this.value)); if (o.after) o.after(x); touch(); },
+    onchange(){ if (o.num && o.fmt && obj[key] !== '' && obj[key] != null) this.value = fmtR(obj[key]); commit(); if (o.rerender) render(); },
+    onfocus(){ if (isPH(this.value)) this.select(); }});
+  inp.value = String(val);
+  const field = o.prefix ? h('div', {class:'cae-pre'}, h('span', {}, o.prefix), inp) : inp;
+  return h('label', {class:'cae-f' + (o.half ? ' half' : '')}, h('span', {class:'cae-l'}, label, o.side ? h('i', {}, o.side) : null), field, o.help ? h('span', {class:'cae-help'}, o.help) : null);
+}
+function fSelect(obj, key, label, options, o = {}){
+  const sel = h('select', {class:'cae-in', onchange(){ obj[key] = o.num ? Number(this.value) : this.value; if (o.after) o.after(obj[key]); commit(); touch(); if (o.rerender !== false) render(); }},
+    options.map(([v, l]) => h('option', {value:String(v), selected: String(obj[key] ?? '') === String(v)}, l)));
+  return h('label', {class:'cae-f' + (o.half ? ' half' : '')}, h('span', {class:'cae-l'}, label), sel, o.help ? h('span', {class:'cae-help'}, o.help) : null);
+}
+function fSeg(obj, key, label, options, o = {}){
+  return h('div', {class:'cae-f'}, h('span', {class:'cae-l'}, label),
+    h('div', {class:'cae-segf'}, options.map(([v, l, sub]) => h('button', {type:'button', class: obj[key] === v ? 'on' : '',
+      onclick(){ if (obj[key] === v) return; mut(() => { obj[key] = v; if (o.after) o.after(v); }); }}, l, sub ? h('small', {}, sub) : null))),
+    o.help ? h('span', {class:'cae-help'}, o.help) : null);
+}
+function fTog(obj, key, label, sub, o = {}){
+  return h('label', {class:'cae-tog'}, h('input', {type:'checkbox', checked: !!obj[key], onchange(){ mut(() => { obj[key] = this.checked; if (o.after) o.after(this.checked); }); }}),
+    h('span', {}, label, sub ? h('small', {}, sub) : null));
+}
+function fLines(obj, key, label, o = {}){
+  const arr = Array.isArray(obj[key]) ? obj[key] : [];
+  const ta = h('textarea', {class:'cae-in' + (arr.some(isPH) ? ' ph' : ''), rows: o.rows || Math.min(10, Math.max(3, arr.length + 1)),
+    oninput(){ const list = this.value.split('\n').map(s => s.trim()).filter(Boolean); obj[key] = o.num ? list.map(Number).filter(n => !isNaN(n)) : list; this.classList.toggle('ph', obj[key].some(isPH)); touch(); },
+    onchange(){ commit(); }});
+  ta.value = arr.join('\n');
+  return h('label', {class:'cae-f'}, h('span', {class:'cae-l'}, label, h('i', {}, 'one per line')), ta, o.help ? h('span', {class:'cae-help'}, o.help) : null);
+}
+function cell(arr, i, ph){ // input bound to arr[i]
+  const v = arr[i] == null ? '' : String(arr[i]);
+  const inp = h('input', {class:'cae-in' + (isPH(v) ? ' ph' : ''), placeholder: ph,
+    oninput(){ arr[i] = this.value; this.classList.toggle('ph', isPH(this.value)); touch(); }, onchange: commit, onfocus(){ if (isPH(this.value)) this.select(); }});
+  inp.value = v; return inp;
+}
+function fPairs(obj, key, label, [a, b], o = {}){
+  if (!Array.isArray(obj[key])) obj[key] = [];
+  const arr = obj[key];
+  return h('div', {class:'cae-f'}, h('span', {class:'cae-l'}, label, o.max ? h('i', {}, `up to ${o.max}`) : null),
+    h('div', {class:'cae-pairs'}, arr.map((p, i) => h('div', {class:'cae-pair'}, cell(p, 0, a), cell(p, 1, b),
+      h('button', {class:'cae-ib', title:'Move up', onclick:() => mut(() => swap(arr, i, i - 1))}, '↑'),
+      h('button', {class:'cae-ib', title:'Remove', onclick:() => mut(() => arr.splice(i, 1))}, '✕')))),
+    (!o.max || arr.length < o.max) ? h('button', {class:'cae-add sm', onclick:() => mut(() => arr.push(['', '']))}, '+ Add row') : null,
+    o.help ? h('span', {class:'cae-help'}, o.help) : null);
+}
+function backBar(label, fn, ...right){
+  return h('div', {class:'cae-back'}, h('button', {onclick: fn || (() => go({name:'home'}))}, '← ' + label), h('div', {class:'cae-sp'}), right);
+}
+const LBL = {title:'Car name', sub:'Model line', year:'Year', transmission:'Gearbox', fuel:'Fuel', stock:'Stock number', km:'Mileage', extra:'Extra line',
+  colour:'Exterior colour', interior:'Interior', wheels:'Wheels', engine:'Engine', doors:'Doors', seats:'Seats', owners:'Previous owners', history:'History & warranty',
+  dealerNotes:'Dealer notes', monthlyNote:'Offer terms', make:'Brand', stats:'Key stats', specs:'Specification', packs:'Packs', features:'Features', services:'Services & plans',
+  highlights:'Highlights', label:'Short label', intro:'Intro', name:'Name', short:'Logo text', tagline:'Under the logo', phone:'Phone', whatsapp:'WhatsApp number', email:'Email',
+  address:'Address', mapsQuery:'Google Maps search', hours:'Trading hours', provider:'Finance provider', salesperson:'Salesperson'};
+function pretty(w){
+  const m = /^([\w ›]+): "(.*)"( ×\d+)?$/.exec(w); if (!m) return w.charAt(0).toUpperCase() + w.slice(1);
+  if (/^placeholder-/.test(m[2])) return 'Placeholder photo' + (m[3] || '');
+  const INNER = {title:'title', items:'items', intro:'intro', detail:'feature cards', text:'text', figures:'figures', name:'name', role:'role', initials:'initials'};
+  const path = m[1].split(' › ').map((k, i) => (i ? INNER[k] : LBL[k]) || k).join(' › ');
+  return `${path} still says "${m[2]}"${m[3] || ''}`;
+}
+function issueBox(list){
+  return list.length ? h('div', {class:'cae-issues'}, h('b', {}, `${list.length} to fix before launch`), h('ul', {}, list.slice(0, 8).map(i => h('li', {}, pretty(i.what)))), list.length > 8 ? h('div', {}, `+ ${list.length - 8} more`) : null) : null;
+}
+
+/* ---------- images ---------- */
+// phone copies: card 750 wide and gallery 1080 wide, WebP, plus a soft tone for the loading spot (see DECISIONS.md, "Images & mobile memory")
+async function makeMobile(key, src){
+  const enc = (W, q) => { const sc = Math.min(1, W / src.width), c = document.createElement('canvas');
+    c.width = Math.round(src.width * sc); c.height = Math.round(src.height * sc);
+    const x = c.getContext('2d'); x.fillStyle = '#fff'; x.fillRect(0, 0, c.width, c.height); x.drawImage(src, 0, 0, c.width, c.height);
+    return new Promise(r => c.toBlob(r, 'image/webp', q)); };
+  const card = await enc(750, .76), gallery = await enc(1080, .8);
+  if (!card || card.type !== 'image/webp' || !gallery || gallery.type !== 'image/webp') return false;   // this browser can't make WebP (e.g. Safari): the pre-launch check lists the photo
+  const c = document.createElement('canvas'); c.width = c.height = 1; const x = c.getContext('2d'); x.drawImage(src, 0, 0, 1, 1);
+  const [r, g, b] = x.getImageData(0, 0, 1, 1).data, soft = v => Math.round(v * .7 + 238 * .3).toString(16).padStart(2, '0');
+  NEWMOB[key] = {card, gallery};
+  S.mobileImages = S.mobileImages || {}; S.mobileImages[key] = '#' + soft(r) + soft(g) + soft(b);
+  return true;
+}
+async function makeMissingMobile(){
+  const mob = S.mobileImages || {};
+  const keys = [...new Set(S.vehicles.flatMap(v => v.images || []))].filter(k => !/^(data:|blob:|https?:)/.test(k) && !mob[k]);
+  if (!keys.length) return toast('Every car photo already has a phone copy.');
+  toast(`Making phone copies of ${keys.length} photo${keys.length > 1 ? 's' : ''}…`, 60000);
+  let ok = 0, bad = 0;
+  for (const k of keys) { let bmp = null; try { const b = await readImage(k); bmp = b && await createImageBitmap(b); } catch(_) {}
+    if (bmp && await makeMobile(k, bmp)) ok++; else bad++; }
+  commit(); touch(); render();
+  toast(ok ? `${ok} phone cop${ok > 1 ? 'ies' : 'y'} made. Save or export to keep them.${bad ? ` ${bad} couldn’t be made here: use Chrome, with the page opened from its folder.` : ''}`
+           : 'No phone copies could be made here. Use Chrome, with the page opened from its folder.', 9000);
+}
+async function addShareImage(files){
+  const f = [...files].find(x => /^image\//.test(x.type)); if (!f) return;
+  let bmp; try { bmp = await createImageBitmap(f); } catch(_) { toast(`Couldn't read ${f.name}. Use JPG, PNG or WebP.`); return; }
+  const W = 1200, H = 630, sc = Math.max(W / bmp.width, H / bmp.height), c = document.createElement('canvas'); c.width = W; c.height = H;   // cropped to the 1200x630 link-preview shape
+  c.getContext('2d').drawImage(bmp, (W - bmp.width * sc) / 2, (H - bmp.height * sc) / 2, bmp.width * sc, bmp.height * sc);
+  const blob = await new Promise(r => c.toBlob(r, 'image/jpeg', .85));
+  const key = 'share-' + Math.random().toString(36).slice(2, 7);
+  NEWIMG[key] = blob; MAP[key] = URL.createObjectURL(blob);
+  mut(() => { S.meta.shareImage = key; }); toast('Share image added');
+}
+async function ingest(file, base, maxW){
+  let bmp;
+  try { bmp = await createImageBitmap(file); } catch(_) { toast(`Couldn't read ${file.name}. Use JPG, PNG or WebP.`); return null; }
+  const sc = Math.min(1, (maxW || 1600) / bmp.width), w = Math.round(bmp.width * sc), hh = Math.round(bmp.height * sc);
+  const c = document.createElement('canvas'); c.width = w; c.height = hh;
+  const ctx = c.getContext('2d'); ctx.fillStyle = '#fff'; ctx.fillRect(0, 0, w, hh); ctx.drawImage(bmp, 0, 0, w, hh);
+  const blob = await new Promise(r => c.toBlob(r, 'image/jpeg', .82));
+  const key = (slugify(base) || 'photo').slice(0, 40) + '-' + Math.random().toString(36).slice(2, 7);
+  NEWIMG[key] = blob; MAP[key] = URL.createObjectURL(blob);
+  await makeMobile(key, bmp);
+  return key;
+}
+async function addPhotos(v, files){
+  files = [...files].filter(f => /^image\//.test(f.type)); if (!files.length) return;
+  toast(`Adding ${files.length} photo${files.length > 1 ? 's' : ''}…`, 8000);
+  const keys = []; for (const f of files) { const k = await ingest(f, v.slug); if (k) keys.push(k); }
+  if (!keys.length) return;
+  mut(() => { if (v.images.every(isPH)) v.images = []; v.images.push(...keys); });
+  toast(`${keys.length} photo${keys.length > 1 ? 's' : ''} added`);
+}
+function photoPicker(fn, label){
+  const inp = h('input', {type:'file', accept:'image/*', multiple:true, onchange(){ fn(this.files); this.value = ''; }});
+  const z = h('label', {class:'cae-drop', ondragover(e){ e.preventDefault(); z.classList.add('over'); }, ondragleave(){ z.classList.remove('over'); },
+    ondrop(e){ e.preventDefault(); z.classList.remove('over'); if (e.dataTransfer.files.length) fn(e.dataTransfer.files); }}, inp, label || '+ Add photos (or drop them here)');
+  return z;
+}
+
+/* ---------- views ---------- */
+function go(v){ view = v; render(true); panel.scrollTop = 0; if (v.name === 'vehicle') markPreview(v.id, true); }
+function render(fresh){
+  const st = panel.scrollTop; live = []; issues = SITE.prelaunchCheck(S);
+  const fn = VIEWS[view.name] || VIEWS.home;
+  panel.replaceChildren(...[].concat(fn(view)).flat(Infinity).filter(Boolean));
+  if (!fresh) panel.scrollTop = st;
+  updateTop();
+}
+const VIEWS = {};
+
+VIEWS.home = () => [
+  isMaster() ? h('div', {class:'cae-banner'}, h('span', {}, h('b', {}, (S.meta.lockName || 'Master template') + ', locked. '), 'Changes here can\u2019t be saved. To start a client build, export a working copy and open that.'),
+    h('button', {class:'cae-btn sm', onclick: exportDlg}, 'Export working copy')) : draftBanner(),
+  h('div', {class:'cae-h'}, h('h2', {}, 'Page'), h('p', {}, 'Hero, banners, finder and the order of everything on the page.')),
+  navRow('Page layout, hero & banners', (phLayout().length) + ' blocks and sections, top to bottom', () => go({name:'phLayout'}), issuesWhere('Page blocks')),
+  navRow('Menu & logo', 'Header links and the logo emblem', () => go({name:'phMenu'})),
+  h('div', {class:'cae-h'}, h('h2', {}, 'Vehicles'), h('p', {}, 'Sections and their cars. The order on the page is set in Page layout. Click a car to edit it. Drag rows (or use the arrows) to reorder or move between sections.')),
+  S.sections.map((s, i) => sectionBlock(s, i)),
+  h('button', {class:'cae-add', onclick: addSection}, '+ Add section'),
+  h('div', {class:'cae-h'}, h('h2', {}, 'Model content'), h('p', {}, 'Shared popup content (key stats, specs, packs, features, services, highlights). Cars link to one; editing it updates every car that uses it.')),
+  Object.keys(S.models || {}).map(k => navRow(modelName(k), usedBy(k).length + ' car' + (usedBy(k).length === 1 ? '' : 's') + ' · ' + k, () => go({name:'model', key:k}), issuesWhere(`Model content "${k}"`))),
+  h('button', {class:'cae-add', onclick: () => addModel()}, '+ Add model content'),
+  h('div', {class:'cae-h'}, h('h2', {}, 'Used by every car')),
+  navRow('Finance defaults', 'Terms behind every calculated monthly payment', () => go({name:'finance'}), issuesWhere('Finance defaults')),
+  navRow('Dealer & contact', 'WhatsApp, phone and salesperson shown in popups', () => go({name:'dealer'}), issuesWhere('Dealer details')),
+  navRow('Page title, sharing & colour', 'Browser title, Google and link previews, brand accent colour', () => go({name:'site'}), issuesWhere(w => w === 'Brand theme' || w === 'Sharing')),
+  h('div', {style:'height:20px'})
+];
+
+/* ---------- PHAROAH build layer: editor views for the hero, page layout, banners, menu and logo (data.pharoah) ---------- */
+const PHT = {marques:'Marques strip', chapter:'Chapter band', feature:'Feature banner', banner:'Design banner (your artwork)', finder:'Find your car', concierge:'Concierge form', culture:'Culture tiles'};
+const phP = () => (S.pharoah = S.pharoah || {});
+const phLayout = () => (phP().layout = phP().layout || []);
+const phCarName = v => (v.year ? v.year + ' ' : '') + v.title;
+const phItemName = it => typeof it === 'string'
+  ? ((S.sections.find(s => s.id === it) || {}).title || 'Missing section: ' + it)
+  : (PHT[it.type] || it.type) + (it.title ? ': ' + it.title : it.alt ? ': ' + it.alt : '');
+function phAnchors(){   // every place a link can jump to on this page
+  const a = [['#top', 'Top of page'], ['#contact', 'Contact (footer)']];
+  S.sections.forEach(s => a.push(['#' + s.id, 'Section: ' + s.title]));
+  phLayout().forEach(it => { if (typeof it === 'object' && it.id) a.push(['#' + it.id, (PHT[it.type] || it.type) + ': ' + (it.title || it.alt || it.id)]); });
+  return a;
+}
+const phLinkList = () => h('datalist', {id:'ph-dl-links'}, phAnchors().map(([v, l]) => h('option', {value:v}, l)));
+const phUniq = base => { const ids = new Set([...S.sections.map(s => s.id), ...phLayout().filter(x => typeof x === 'object').map(x => x.id)]); let s = base, n = 2; while (ids.has(s)) s = base + '-' + n++; return s; };
+
+// image field: upload (kept up to 2400 px wide, phone copies made automatically) or use a car photo
+function phImgField(obj, key, label, o = {}){
+  const carKey = key === 'img' && !obj.img && obj.car ? ((vById(String(obj.car).split(':')[0]) || {}).images || [])[Math.max(0, (+String(obj.car).split(':')[1] || 1) - 1)] : '';
+  const k = obj[key] || carKey;
+  const inp = h('input', {type:'file', accept:'image/*', style:'display:none', async onchange(){
+    const f = this.files[0]; this.value = ''; if (!f) return;
+    toast('Adding image…', 8000);
+    const nk = await ingest(f, o.base || 'banner', o.max || 2400); if (!nk) return;
+    mut(() => { obj[key] = nk; if (key === 'img') delete obj.car; }); toast('Image added. Save to keep it.');
+  }});
+  return h('div', {class:'cae-f'}, h('span', {class:'cae-l'}, label, o.side ? h('i', {}, o.side) : null),
+    h('div', {class:'cae-thumb1'}, k ? h('img', {src: imgURL(k), alt:''}) : h('span', {class:'cae-help'}, 'No image yet'),
+      h('label', {class:'cae-btn sm'}, inp, k ? 'Replace' : 'Upload'),
+      (obj[key] || carKey) ? h('button', {class:'cae-btn sm', onclick: () => mut(() => { delete obj[key]; if (key === 'img') delete obj.car; })}, 'Remove') : null),
+    key === 'img' ? h('select', {class:'cae-in', style:'margin-top:6px', onchange(){ if (!this.value) return; const id = this.value; mut(() => { obj.car = id; delete obj.img; }); }},
+      h('option', {value:''}, '…or use a car’s photo'), S.vehicles.map(v => h('option', {value:v.id, selected: !obj.img && String(obj.car || '').split(':')[0] === v.id}, phCarName(v)))) : null,
+    o.help ? h('span', {class:'cae-help'}, o.help) : null);
+}
+const phImgPair = (obj, what) => [
+  phImgField(obj, 'img', 'Image', {side: what || 'computers and tablets', help: 'Upload a design or photo (JPG/PNG/WebP). Best at 2400 px wide.'}),
+  phImgField(obj, 'imgMobile', 'Phone image', {side:'optional', help:'A separate design for phones (e.g. 1080 × 1350). Leave empty to use the image above.'})];
+const phLink = (obj, key, label, o = {}) => fText(obj, key, label, Object.assign({list:'ph-dl-links', hint:'#finder or https://…', help:'A place on this page (pick from the list) or a full web address.'}, o));
+function phCtas(arr, label){
+  return h('div', {class:'cae-f'}, h('span', {class:'cae-l'}, label),
+    h('div', {style:'display:grid;gap:8px'}, arr.map((c, i) => h('div', {class:'cae-card'},
+      h('div', {class:'cae-card-h'}, h('b', {}, c.label || 'Button ' + (i + 1)),
+        h('button', {class:'cae-ib', title:'Move up', onclick: () => mut(() => swap(arr, i, i - 1))}, '↑'),
+        h('button', {class:'cae-ib', title:'Remove', onclick: () => mut(() => arr.splice(i, 1))}, '✕')),
+      fText(c, 'label', 'Button text', {half:true}),
+      fSelect(c, 'tab', 'Opens', [['', 'A link'], ['sell', 'Concierge: sell or trade in'], ['finance', 'Concierge: finance'], ['source', 'Concierge: source a car']], {half:true, after: x => { if (!x) delete c.tab; }}),
+      c.tab ? null : phLink(c, 'href', 'Link'),
+      fTog(c, 'solid', 'Gold filled button', 'Off = outlined')))),
+    h('button', {class:'cae-add sm', onclick: () => mut(() => arr.push({label:'Find out more', href:'#finder'}))}, '+ Add button'));
+}
+function phHeadFields(b){
+  return [fText(b, 'eyebrow', 'Small heading', {half:true, side:'optional'}), fText(b, 'title', 'Heading', {half:true}), fText(b, 'text', 'Text', {multi:true, rows:3, side:'optional'})];
+}
+function phIdField(b){
+  return h('details', {class:'cae-adv'}, h('summary', {}, 'Link name'), fText(b, 'id', 'Link name', {help:'Jump link to this block: yoursite.co.za/#' + (b.id || '…'), after: x => { b.id = slugify(x); }}));
+}
+
+VIEWS.phLayout = () => {
+  const L = phLayout(), add = {type:'feature', at:String(L.length)};
+  const missing = S.sections.filter(s => !L.includes(s.id));
+  return [backBar('All vehicles'), phLinkList(),
+    h('div', {class:'cae-h'}, h('h2', {}, 'Page layout'), h('p', {}, 'Everything between the hero and the footer, top to bottom. Click a row to edit it. Arrows move it. Sections not listed show at the end of the page.')),
+    navRow('Hero', '3-panel collection chooser at the top', () => go({name:'phHero'})),
+    h('div', {class:'cae-sec'}, L.map((it, i) => h('div', {class:'cae-vrow', onclick: () => typeof it === 'string' ? go({name:'section', i: S.sections.findIndex(s => s.id === it)}) : go({name:'phBlock', i})},
+      h('div', {class:'cae-vtx'}, h('b', {}, phItemName(it)), h('small', {}, typeof it === 'string' ? 'Car section · ' + ((S.sections.find(s => s.id === it) || {}).vehicles || []).length + ' cars' : (it.id ? '#' + it.id : 'Block'))),
+      h('div', {class:'cae-vact'},
+        h('button', {class:'cae-ib', title:'Move up', onclick(e){ e.stopPropagation(); mut(() => swap(L, i, i - 1)); }}, '↑'),
+        h('button', {class:'cae-ib', title:'Move down', onclick(e){ e.stopPropagation(); mut(() => swap(L, i, i + 1)); }}, '↓'),
+        typeof it === 'string' ? null : h('button', {class:'cae-ib', title:'Remove block', onclick(e){ e.stopPropagation(); mut(() => L.splice(i, 1)); toast('Block removed. Undo brings it back.'); }}, '✕'))))),
+    missing.length ? h('div', {class:'cae-banner'}, h('span', {}, missing.length + ' section' + (missing.length > 1 ? 's are' : ' is') + ' not placed yet and show' + (missing.length > 1 ? '' : 's') + ' at the end: ' + missing.map(s => s.title).join(', ')),
+      h('button', {class:'cae-btn sm', onclick: () => mut(() => missing.forEach(s => L.push(s.id)))}, 'Add to the layout')) : null,
+    h('div', {class:'cae-h'}, h('h2', {}, 'Add a block')),
+    h('div', {class:'cae-body'},
+      fSelect(add, 'type', 'Block', Object.entries(PHT), {half:true, rerender:false}),
+      fSelect(add, 'at', 'Place it after', [[String(L.length), 'The end of the page'], ['-1', 'The top (under the hero)'], ...L.map((it, i) => [String(i), phItemName(it)])], {half:true, rerender:false}),
+      h('button', {class:'cae-btn', onclick(){
+        const t = add.type, n = {type:t};
+        if (t === 'chapter') Object.assign(n, {id: phUniq('chapter'), eyebrow:'', title:'New chapter', text:'', jump:[]});
+        if (t === 'feature') Object.assign(n, {id: phUniq('feature'), eyebrow:'', title:'New feature banner', text:'', points:[], ctas:[]});
+        if (t === 'banner') Object.assign(n, {id: phUniq('banner'), alt:'', href:''});
+        if (t === 'culture') Object.assign(n, {eyebrow:'', title:'More than a dealership', tiles:[]});
+        if (t === 'finder') Object.assign(n, {id:'finder', title:'Find your car', lines:[['investments', 'Pharoah Auto Investments (R1m +)'], ['origins', 'ORIGINS (under R1m)']]});
+        if (t === 'concierge') Object.assign(n, {id:'concierge', title:'How can we help?', tabs:[['sell', 'Sell or trade in'], ['finance', 'Finance'], ['source', 'Source a car']], submit:{sell:'Get my offer', finance:'Submit application', source:'Find my car'}});
+        const at = Math.min(L.length, +add.at + 1);
+        mut(() => L.splice(at, 0, n)); go({name:'phBlock', i: at}); }}, 'Add block')),
+    h('div', {style:'height:20px'})];
+};
+
+VIEWS.phHero = () => {
+  const H = phP().hero = phP().hero || {panels:[]}; H.panels = H.panels || [];
+  return [backBar('Page layout', () => go({name:'phLayout'})), phLinkList(),
+    h('div', {class:'cae-h'}, h('h2', {}, 'Hero'), h('p', {}, 'The full-screen collection chooser at the top of the page.')),
+    h('div', {class:'cae-body'}, phHeadFields(H), h('span', {class:'cae-help'}, 'Optional intro above the panels. Leave the heading empty to start the page with the panels (current design).')),
+    H.panels.map((p, i) => h('div', {class:'cae-sec'}, h('div', {class:'cae-sec-h'}, h('div', {}, h('b', {}, 'Panel ' + (i + 1) + ': ' + (p.title || '')), h('small', {}, p.href || '')),
+        h('button', {class:'cae-ib', title:'Move up', onclick: () => mut(() => swap(H.panels, i, i - 1))}, '↑'),
+        h('button', {class:'cae-ib', title:'Remove panel', onclick: () => { mut(() => H.panels.splice(i, 1)); toast('Panel removed. Undo brings it back.'); }}, '✕')),
+      h('div', {class:'cae-body'}, fText(p, 'title', 'Heading'), fText(p, 'text', 'Text', {multi:true, rows:2, side:'optional'}),
+        phLink(p, 'href', 'Goes to', {half:true}), fText(p, 'cta', 'Button text', {half:true, hint:'Enter'}),
+        fSelect(p, 'count', 'Car count under the heading', [['', 'None'], ['investments', 'Pharoah Auto Investments cars'], ['origins', 'ORIGINS cars'], ['all', 'All cars']], {after: x => { if (!x) delete p.count; }}),
+        phImgPair(p), fTog(p, 'textOff', 'The image has its own text', 'Hides the heading, text and button (the whole panel is still the link).')))),
+    H.panels.length < 4 ? h('button', {class:'cae-add', onclick: () => mut(() => H.panels.push({title:'New panel', text:'', href:'#finder', cta:'Enter'}))}, '+ Add panel') : null,
+    h('div', {style:'height:20px'})];
+};
+
+VIEWS.phBlock = ({i}) => {
+  const L = phLayout(), b = L[i];
+  if (!b || typeof b !== 'object') return VIEWS.phLayout();
+  const t = b.type, body = [];
+  if (t === 'marques') body.push(fText(b, 'title', 'Label', {hint:'Shop by marque', help:'Marques and counts come from the stock. Clicking one filters "Find your car".'}));
+  if (t === 'chapter') {
+    if (!Array.isArray(b.jump)) b.jump = [];
+    body.push(...phHeadFields(b), ...phImgPair(b),
+      h('div', {class:'cae-f'}, h('span', {class:'cae-l'}, 'Jump links', h('i', {}, 'sections listed under the text')),
+        h('div', {style:'display:grid;gap:6px'}, S.sections.map(s => fTog({on: b.jump.includes(s.id)}, 'on', s.title, null, {after: on => { b.jump = on ? [...b.jump, s.id] : b.jump.filter(x => x !== s.id); }})))),
+      fTog(b, 'textOff', 'The image is a finished design', 'Shows the image on its own, without the text and links.'), phIdField(b));
+  }
+  if (t === 'feature') {
+    if (!Array.isArray(b.ctas)) b.ctas = [];
+    body.push(...phHeadFields(b), fLines(b, 'points', 'Bullet points', {help:'Optional, up to 4 reads best.'}), ...phImgPair(b),
+      fTog(b, 'flip', 'Image on the right', 'Off = image on the left'), phCtas(b.ctas, 'Buttons'),
+      fTog(b, 'textOff', 'The image is a finished design', 'Shows the image on its own (clickable with the link below), without the text and buttons.'),
+      b.textOff ? phLink(b, 'href', 'Banner link') : null, phIdField(b));
+  }
+  if (t === 'banner') body.push(...phImgPair(b, 'computers and tablets'), fText(b, 'alt', 'Describe the banner', {help:'For screen readers and Google, e.g. "October specials: Range Rover Sport from R1.9m".'}),
+    phLink(b, 'href', 'Banner link', {side:'optional'}),
+    b.href && b.href.startsWith('#') ? fSelect(b, 'tab', 'If it links to the concierge form, open', [['', 'The default tab'], ['sell', 'Sell or trade in'], ['finance', 'Finance'], ['source', 'Source a car']], {after: x => { if (!x) delete b.tab; }}) : null,
+    fTog(b, 'edge', 'Edge to edge', 'Off = lines up with the sections'), phIdField(b));
+  if (t === 'finder') { if (!Array.isArray(b.lines)) b.lines = [];
+    body.push(...phHeadFields(b), fPairs(b, 'lines', 'Collection filter', ['line key (investments / origins)', 'Label shown']), h('span', {class:'cae-help'}, 'Marques, categories (your sections) and prices come from the stock.')); }
+  if (t === 'concierge') { b.submit = b.submit || {}; if (!Array.isArray(b.tabs)) b.tabs = [];
+    body.push(...phHeadFields(b), h('div', {class:'cae-f'}, h('span', {class:'cae-l'}, 'Tabs', h('i', {}, 'label · button text')),
+      h('div', {class:'cae-pairs'}, b.tabs.map((tb, j) => h('div', {class:'cae-pair'}, cell(tb, 1, 'Tab label'),
+        (() => { const inp = h('input', {class:'cae-in', placeholder:'Button text', oninput(){ b.submit[tb[0]] = this.value; touch(); }, onchange: commit}); inp.value = b.submit[tb[0]] || ''; return inp; })(),
+        h('button', {class:'cae-ib', title:'Move up', onclick: () => mut(() => swap(b.tabs, j, j - 1))}, '↑'), h('span', {}))))),
+      h('span', {class:'cae-help'}, 'The form fields for each tab (sell, finance, source) are fixed. Contact details come from Dealer & contact.')); }
+  if (t === 'culture') { if (!Array.isArray(b.tiles)) b.tiles = [];
+    body.push(...phHeadFields(b), h('div', {class:'cae-f'}, h('span', {class:'cae-l'}, 'Tiles'),
+      h('div', {style:'display:grid;gap:8px'}, b.tiles.map((tl, j) => h('div', {class:'cae-card'},
+        h('div', {class:'cae-card-h'}, h('b', {}, tl.title || 'Tile'), h('button', {class:'cae-ib', title:'Move up', onclick: () => mut(() => swap(b.tiles, j, j - 1))}, '↑'),
+          h('button', {class:'cae-ib', title:'Remove', onclick: () => mut(() => b.tiles.splice(j, 1))}, '✕')),
+        fText(tl, 'title', 'Title', {half:true}), fText(tl, 'cta', 'Link text', {half:true}), fText(tl, 'text', 'Text', {multi:true, rows:2}), phLink(tl, 'href', 'Link'), phImgPair(tl, 'tile photo')))),
+      h('button', {class:'cae-add sm', onclick: () => mut(() => b.tiles.push({title:'New tile', text:'', href:'', cta:'Discover'}))}, '+ Add tile'))); }
+  return [backBar('Page layout', () => go({name:'phLayout'}), h('button', {class:'cae-btn sm', onclick(){ try { const f = frames.querySelector('iframe.live'), d = f.contentDocument, el = b.id && d.getElementById(b.id);
+      if (el) f.contentWindow.scrollTo({top: el.getBoundingClientRect().top + f.contentWindow.scrollY - 70, behavior:'smooth'}); root.classList.add('pv'); } catch(_) {} }}, 'Show in preview')),
+    phLinkList(), h('div', {class:'cae-h'}, h('h2', {}, PHT[t] || t), h('p', {}, 'Block ' + (i + 1) + ' of ' + L.length + ' on the page.')),
+    h('div', {class:'cae-body'}, body),
+    h('div', {class:'cae-foot'}, h('button', {class:'cae-btn sm', disabled: i === 0 || null, onclick: () => { mut(() => swap(L, i, i - 1)); go({name:'phBlock', i: i - 1}); }}, 'Move up'),
+      h('button', {class:'cae-btn sm', disabled: i === L.length - 1 || null, onclick: () => { mut(() => swap(L, i, i + 1)); go({name:'phBlock', i: i + 1}); }}, 'Move down'),
+      h('button', {class:'cae-btn sm', onclick: () => { const c = clone(b); if (c.id) c.id = phUniq(c.id); mut(() => L.splice(i + 1, 0, c)); go({name:'phBlock', i: i + 1}); }}, 'Duplicate'),
+      h('div', {class:'cae-sp', style:'flex:1'}),
+      confirmBtn('Remove block', 'Click again to remove', () => { mut(() => L.splice(i, 1)); go({name:'phLayout'}); })),
+    h('div', {style:'height:20px'})];
+};
+
+VIEWS.phMenu = () => {
+  S.settings = S.settings || {}; if (!Array.isArray(S.settings.nav)) S.settings.nav = [];
+  const P = phP();
+  const logo = h('input', {type:'file', accept:'image/png,image/svg+xml,image/webp', style:'display:none', onchange(){ const f = this.files[0]; this.value = ''; if (!f) return;
+    if (f.size > 300000) return toast('Logo file is over 300 KB. Use an SVG or a smaller transparent PNG.', 6000);
+    const fr = new FileReader(); fr.onload = () => { mut(() => { P.logo = fr.result; }); toast('Logo added'); }; fr.readAsDataURL(f); }});
+  return [backBar('All vehicles'), phLinkList(),
+    h('div', {class:'cae-h'}, h('h2', {}, 'Menu & logo')),
+    h('div', {class:'cae-body'},
+      fPairs(S.settings, 'nav', 'Menu links', ['Label', '#finder'], {help:'Links in the header. Use a # link name from the list (Page layout shows each block’s link name), or a full web address. Empty list = one link per section.'}),
+      h('div', {class:'cae-f'}, h('span', {class:'cae-l'}, 'Logo emblem', h('i', {}, 'transparent PNG or SVG')),
+        h('div', {class:'cae-thumb1'}, P.logo ? h('span', {style:`display:block;width:63px;height:63px;background:#D7BE69;border-radius:6px;-webkit-mask:url("${P.logo}") center/contain no-repeat;mask:url("${P.logo}") center/contain no-repeat`}) : h('span', {class:'cae-help'}, 'No logo: the header shows the logo text only'),
+          h('label', {class:'cae-btn sm'}, logo, P.logo ? 'Replace' : 'Upload'), P.logo ? h('button', {class:'cae-btn sm', onclick: () => mut(() => { delete P.logo; })}, 'Remove') : null),
+        h('span', {class:'cae-help'}, 'Shown next to the logo text and large in the hero. Its shape is used, coloured in the brand gold, so any colour file works as long as the background is transparent. Logo text: Dealer & contact.'))),
+    h('div', {style:'height:20px'})];
+};
+
+function navRow(title, sub, fn, list){
+  return h('div', {class:'cae-nav', onclick: fn}, h('div', {}, h('b', {}, title), h('small', {}, sub)), badge(list || []), h('span', {}, '›'));
+}
+function draftBanner(){
+  let d = null; try { d = JSON.parse(localStorage.getItem(draftKey) || 'null'); } catch(_) {}
+  if (!d || d.json === SAVED || d.json === JSON.stringify(S) || draftBanner.done) return null;
+  const t = new Date(d.at);
+  return h('div', {class:'cae-banner'}, h('span', {}, `Unsaved edits from ${t.toLocaleDateString()} ${t.toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'})} were found in this browser.`),
+    h('button', {class:'cae-btn sm', onclick(){ draftBanner.done = 1; mut(() => { S = JSON.parse(d.json); }); toast('Draft restored. Photos added in that session need adding again.', 5000); }}, 'Restore'),
+    h('button', {class:'cae-btn sm', onclick(){ draftBanner.done = 1; try { localStorage.removeItem(draftKey); } catch(_) {} render(); }}, 'Discard'));
+}
+function priceLine(v){
+  if (!v.price) return 'No price';
+  const m = SITE.calc ? monthly(v) : null;
+  return 'R ' + SITE.grp(v.price) + (m ? ' · R ' + SITE.grp(m) + ' pm' : '');
+}
+function terms(v){ return Object.assign({}, S.dealer.finance, v.finance || {}); }
+function monthly(v){ if (v.priceMode === 'cash') return null; if (v.priceMode === 'fixed') return v.monthlyFixed || null; return v.price ? SITE.calc(v.price, terms(v)).monthly : null; }
+function sectionBlock(s, i){
+  const list = h('div', {class:'cae-vlist',
+    ondragover(e){ if (drag) e.preventDefault(); },
+    ondrop(e){ if (!drag) return; e.preventDefault(); moveVehicle(drag, s, s.vehicles.length); }},
+    s.vehicles.map((id, j) => { const v = vById(id); return v ? vRow(v, s, j) : null; }));
+  const full = s.vehicles.length >= MAX_PER_SECTION;
+  return h('div', {class:'cae-sec'},
+    h('div', {class:'cae-sec-h'}, h('div', {}, h('b', {}, s.title || 'Untitled section'), h('small', {}, `${s.label || '—'} · ${s.vehicles.length} of ${MAX_PER_SECTION} cars`)),
+      badge(issuesWhere(`Section ${i + 1} (`)), h('button', {class:'cae-lnk', onclick: () => go({name:'section', i})}, 'Edit section')),
+    list,
+    h('div', {class:'cae-addrow'}, full ? 'This section is full (15 cars).' : ['Add a car:',
+      h('button', {class:'cae-btn sm', onclick: () => addVehicle(s, 'new')}, 'New'),
+      h('button', {class:'cae-btn sm', onclick: () => addVehicle(s, 'demo')}, 'Demo'),
+      h('button', {class:'cae-btn sm', onclick: () => addVehicle(s, 'used')}, 'Pre-owned')]));
+}
+function vRow(v, s, j){
+  const row = h('div', {class:'cae-vrow' + (view.name === 'vehicle' && view.id === v.id ? ' on' : ''), draggable:'true',
+    onclick: () => go({name:'vehicle', id:v.id, tab:'card'}),
+    ondragstart(e){ drag = {id:v.id, from:s}; e.dataTransfer.effectAllowed = 'move'; try { e.dataTransfer.setData('text/plain', v.id); } catch(_) {} },
+    ondragend(){ drag = null; },
+    ondragover(e){ if (!drag) return; e.preventDefault(); e.stopPropagation(); row.classList.add('over'); },
+    ondragleave(){ row.classList.remove('over'); },
+    ondrop(e){ if (!drag) return; e.preventDefault(); e.stopPropagation(); moveVehicle(drag, s, j); }},
+    h('img', {src: imgURL(v.images[0]), alt:''}),
+    h('div', {class:'cae-vtx'}, h('b', {}, (v.title || 'Untitled') + (v.sub ? ' ' + v.sub : '')), h('small', {}, [condName(v.condition), v.year, priceLine(v), v.stock].filter(Boolean).join(' · '))),
+    badge(vIssues(v)),
+    h('div', {class:'cae-vact'},
+      h('button', {class:'cae-ib', title:'Move up', onclick(e){ e.stopPropagation(); mut(() => swap(s.vehicles, j, j - 1)); }}, '↑'),
+      h('button', {class:'cae-ib', title:'Move down', onclick(e){ e.stopPropagation(); mut(() => swap(s.vehicles, j, j + 1)); }}, '↓')));
+  return row;
+}
+function moveVehicle(d, to, idx){
+  drag = null;
+  mut(() => {
+    const from = d.from, i = from.vehicles.indexOf(d.id);
+    if (from === to) { if (i < idx) idx--; from.vehicles.splice(i, 1); to.vehicles.splice(idx, 0, d.id); return; }
+    if (to.vehicles.length >= MAX_PER_SECTION) { toast('That section already has 15 cars.'); return; }
+    from.vehicles.splice(i, 1); if (!to.vehicles.includes(d.id)) to.vehicles.splice(idx, 0, d.id);
+  });
+}
+function uniqueSlug(base, self){
+  base = base || 'vehicle'; let s = base, n = 2;
+  while (S.vehicles.some(v => v !== self && v.slug === s)) s = base + '-' + n++;
+  return s;
+}
+const autoSlug = v => slugify([v.year, v.title, v.sub].filter(x => x && !isPH(String(x))).join(' '));
+function blankVehicle(cond){
+  const v = {id: rid('v'), slug:'', model: S.models && S.models['model-placeholder'] ? 'model-placeholder' : '', condition: cond, year:'Year',
+    title:'Car name', sub:'Vehicle model', extra:'', transmission:'Gearbox type', fuel:'Fuel type', price:0, priceMode:'calculated',
+    colour:'Exterior colour', interior:'Interior colour/trim', wheels:'Wheel size & style', stock:'STOCK-000', images:['placeholder-a', 'placeholder-b']};
+  if (cond !== 'new') v.km = '00,000';
+  if (cond === 'used') Object.assign(v, {engine:'Engine size', owners:'0', history:[['History item', 'History detail']], dealerNotes:'Dealer notes text.'});
+  v.slug = uniqueSlug('car-name');
+  return v;
+}
+function addVehicle(s, cond){
+  if (s.vehicles.length >= MAX_PER_SECTION) return toast('A section holds up to 15 cars.');
+  const v = blankVehicle(cond);
+  mut(() => { S.vehicles.push(v); s.vehicles.push(v.id); });
+  go({name:'vehicle', id:v.id, tab:'card'});
+  toast(`${condName(cond)} car added. Fill in the highlighted fields.`);
+}
+function duplicateVehicle(v){
+  const s = S.sections.find(x => x.vehicles.includes(v.id));
+  if (s && s.vehicles.length >= MAX_PER_SECTION) return toast('That section already has 15 cars.');
+  const c = clone(v); c.id = rid('v'); c.slug = uniqueSlug(v.slug.replace(/-\d+$/, ''));
+  mut(() => { S.vehicles.splice(S.vehicles.indexOf(v) + 1, 0, c); if (s) s.vehicles.splice(s.vehicles.indexOf(v.id) + 1, 0, c.id); });
+  go({name:'vehicle', id:c.id, tab:'card'}); toast('Copy made. Change what differs, e.g. colour, stock number, photos.');
+}
+function deleteVehicle(v){
+  mut(() => { S.sections.forEach(s => { s.vehicles = s.vehicles.filter(id => id !== v.id); }); S.vehicles = S.vehicles.filter(x => x !== v); });
+  go({name:'home'}); toast('Car deleted. Undo is top left if that was a mistake.');
+}
+
+/* ----- vehicle editor ----- */
+VIEWS.vehicle = (vw) => {
+  const v = vById(vw.id); if (!v) { view = {name:'home'}; return VIEWS.home(); }
+  const tab = vw.tab || 'card', iss = vIssues(v);
+  const tabIss = {card:[], photos:[], price:[], details:[], content:[]};
+  iss.forEach(i => { const w = i.what;
+    const t = /photo|images|placeholder-/.test(w) ? 'photos' : /price|monthly/.test(w) ? 'price'
+      : /^(colour|interior|wheels|engine|doors|seats|owners|history|dealerNotes)/.test(w) ? 'details' : /^(highlights|extrasText)/.test(w) ? 'content' : 'card';
+    tabIss[t].push(i); });
+  const secs = S.sections.filter(s => s.vehicles.includes(v.id));
+  const tabs = [['card', 'Card'], ['photos', 'Photos'], ['price', 'Price'], ['details', 'Details'], ['content', 'Popup content']];
+  return [
+    backBar('All vehicles', null, h('button', {class:'cae-btn sm', onclick: () => previewPopup(v.id)}, 'Preview popup')),
+    h('div', {class:'cae-vhead'}, h('img', {src: imgURL(v.images[0]), alt:''}),
+      h('div', {}, h('h2', {}, (v.title || 'Untitled') + ' ' + (v.sub || '')), h('small', {}, (secs.map(s => s.title).join(', ') || 'Not in a section') + ' · ' + condName(v.condition)))),
+    h('div', {class:'cae-tabs'}, tabs.map(([k, l]) => h('button', {class: k === tab ? 'on' : '', onclick(){ view.tab = k; render(true); }}, l, tabIss[k].length ? h('i', {}, tabIss[k].length) : null))),
+    issueBox(tabIss[tab]),
+    h('div', {class:'cae-body'}, TABS[tab](v)),
+    h('div', {class:'cae-foot'},
+      h('button', {class:'cae-btn sm', onclick: () => duplicateVehicle(v)}, 'Duplicate'),
+      h('select', {'aria-label':'Move to section', onchange(){ const to = S.sections[this.value]; if (!to) return; const from = S.sections.find(x => x.vehicles.includes(v.id)) || to; moveVehicle({id:v.id, from}, to, to.vehicles.length); toast('Moved to ' + to.title); }},
+        h('option', {value:''}, 'Move to section…'), S.sections.map((s, i) => h('option', {value:i}, s.title))),
+      h('div', {class:'cae-sp'}),
+      confirmBtn('Delete car', 'Click again to delete', () => deleteVehicle(v)))
+  ];
+};
+const TABS = {};
+TABS.card = v => {
+  let prevAuto = autoSlug(v);   // the link name follows year + name + model line until someone sets it by hand
+  const slugFollow = () => { const now = autoSlug(v); if (!v.slug || v.slug === prevAuto || /^car-name(-\d+)?$/.test(v.slug)) v.slug = uniqueSlug(now || 'car-name', v); prevAuto = now; };
+  return [
+    fSeg(v, 'condition', 'Condition', [['new', 'New'], ['demo', 'Demo'], ['used', 'Pre-owned']],
+      {after: c => { if (c !== 'new' && v.km == null) v.km = '00,000'; }, help:'Pre-owned and demo cars show mileage on the card.'}),
+    fText(v, 'title', 'Car name', {side:'card title, up to 2 lines', after: slugFollow}),
+    fText(v, 'sub', 'Model line', {side:'line under the name', after: slugFollow}),
+    fText(v, 'extra', 'Extra line', {side:'optional', hint:'e.g. Free 5-year service plan', help:'Leave empty to hide. When no car in a section has one, the space is removed.'}),
+    fText(v, 'year', 'Year', {half:true, num:true, after: slugFollow}),
+    v.condition !== 'new' ? fText(v, 'km', 'Mileage', {half:true, num:true, fmt:true, side:'km'}) : h('div', {class:'half'}),
+    fText(v, 'transmission', 'Gearbox', {half:true, list:'cae-dl-gear'}),
+    fText(v, 'fuel', 'Fuel', {half:true, list:'cae-dl-fuel'}),
+    fText(v, 'stock', 'Stock number', {side:'optional', help:'Shown in the popup and sent with every enquiry.'}),
+    h('details', {class:'cae-adv'}, h('summary', {}, 'Link name'),
+      fText(v, 'slug', 'Link name', {help:'Direct link to this car: yoursite.co.za/#v-' + v.slug + '. Fills in from year, name and model line.', after: x => { v.slug = slugify(x); }}))
+  ];
+};
+TABS.photos = v => {
+  if (!Array.isArray(v.images)) v.images = [];
+  const ph = v.images.map((k, i) => {
+    const el = h('div', {class:'cae-ph' + (isPH(k) ? ' bad' : ''), draggable:'true', tabindex:'0',
+      ondragstart(e){ drag = {photo:i}; e.dataTransfer.effectAllowed = 'move'; try { e.dataTransfer.setData('text/plain', 'p' + i); } catch(_) {} },
+      ondragover(e){ if (drag && drag.photo != null) { e.preventDefault(); el.classList.add('over'); } },
+      ondragleave(){ el.classList.remove('over'); },
+      ondrop(e){ if (!drag || drag.photo == null) return; e.preventDefault(); const from = drag.photo; drag = null; mut(() => { const [x] = v.images.splice(from, 1); v.images.splice(i, 0, x); }); }},
+      h('img', {src: imgURL(k), alt:''}), i === 0 ? h('span', {class:'cae-cover'}, 'Cover') : null,
+      h('div', {class:'cae-phact'},
+        i ? h('button', {title:'Make cover photo', onclick: () => mut(() => { const [x] = v.images.splice(i, 1); v.images.unshift(x); })}, '★') : null,
+        h('button', {title:'Move left', onclick: () => mut(() => swap(v.images, i, i - 1))}, '←'),
+        h('button', {title:'Move right', onclick: () => mut(() => swap(v.images, i, i + 1))}, '→'),
+        h('button', {title:'Remove photo', onclick: () => mut(() => v.images.splice(i, 1))}, '✕')));
+    return el;
+  });
+  return [
+    h('div', {class:'cae-photos'}, ph, photoPicker(f => addPhotos(v, f))),
+    h('span', {class:'cae-help'}, 'The first photo is the card cover. Cards show the first 5, the popup shows them all. Drag to reorder. Photos are resized to 1600px wide and saved with the page. Highlighted photos are placeholders: new photos replace them automatically.')
+  ];
+};
+TABS.price = v => {
+  const res = h('div', {class:'cae-res'});
+  const upd = () => {
+    const m = monthly(v);
+    res.replaceChildren(
+      v.priceMode === 'cash' ? h('b', {}, v.price ? 'R ' + SITE.grp(v.price) : 'Price not set') : h('b', {}, m ? 'R ' + SITE.grp(Math.round(m)) + ' pm' : 'Monthly not set'),
+      v.priceMode === 'calculated' ? (v.price ? (() => { const t = terms(v); return `On R ${SITE.grp(v.price)}: ${t.termMonths} months, ${t.depositPct}% deposit, ${t.ratePct}% interest, ${t.balloonPct}% balloon${v.finance ? ' (custom for this car)' : ' (dealer defaults)'}.`; })() : 'Enter the price to work it out.')
+      : v.priceMode === 'fixed' ? 'Shown exactly as typed, with the offer terms below it.' : 'No monthly payment is shown for this car.');
+  };
+  upd(); live.push(upd);
+  const out = [
+    fText(v, 'price', 'Price', {num:true, fmt:true, zero:true, prefix:'R', help:'Retail price including VAT.'}),
+    fSeg(v, 'priceMode', 'Monthly payment', [['calculated', 'Worked out', 'from finance terms'], ['fixed', 'Typed in', 'dealer’s offer'], ['cash', 'None', 'price only']]),
+    res
+  ];
+  if (v.priceMode === 'fixed') out.push(
+    fText(v, 'monthlyFixed', 'Monthly payment', {num:true, float:true, prefix:'R', half:true}), h('div', {class:'half'}),
+    fText(v, 'monthlyNote', 'Offer terms', {multi:true, rows:3, help:'Shown under the payment, e.g. "72 months, 10% deposit, 35% balloon. Valid until 31 Oct."'}));
+  if (v.priceMode === 'calculated') {
+    out.push(h('label', {class:'cae-tog'}, h('input', {type:'checkbox', checked: !!v.finance, onchange(){ mut(() => { if (this.checked) { const f = S.dealer.finance; v.finance = {depositPct:f.depositPct, termMonths:f.termMonths, ratePct:f.ratePct, balloonPct:f.balloonPct}; } else delete v.finance; }); }}),
+      h('span', {}, 'Custom finance for this car', h('small', {}, 'Off = uses the dealer defaults (Finance defaults on the main list).'))));
+    if (v.finance) { const f = v.finance; out.push(
+      fText(f, 'depositPct', 'Deposit', {num:true, float:true, half:true, side:'%'}),
+      fSelect(f, 'termMonths', 'Term', (S.dealer.finance.termOptions || [36, 48, 60, 72, 84]).map(n => [n, n + ' months']), {num:true, half:true, rerender:false}),
+      fText(f, 'ratePct', 'Interest rate', {num:true, float:true, half:true, side:'%'}),
+      fText(f, 'balloonPct', 'Balloon', {num:true, float:true, half:true, side:'%'})); }
+  }
+  return out;
+};
+TABS.details = v => [
+  h('span', {class:'cae-help', style:'margin-top:-4px'}, 'Shown in the popup. Leave a field empty to hide it.'),
+  fText(v, 'colour', 'Exterior colour', {half:true}),
+  fText(v, 'interior', 'Interior', {half:true}),
+  fText(v, 'wheels', 'Wheels', {half:true}),
+  fText(v, 'engine', 'Engine', {half:true, hint:'e.g. 2.0 turbo petrol'}),
+  fText(v, 'doors', 'Doors', {half:true, num:true}),
+  fText(v, 'seats', 'Seats', {half:true, num:true}),
+  v.condition === 'used' ? fText(v, 'owners', 'Previous owners', {half:true, num:true}) : null,
+  v.condition === 'used' ? h('div', {class:'half'}) : null,
+  fText(v, 'dealerNotes', 'Dealer notes', {multi:true, rows:4, hint:'Anything the dealer wants buyers to know about this car.'}),
+  v.condition === 'used' ? fPairs(v, 'history', 'History & warranty', ['e.g. Service history', 'e.g. Full, BMW dealer'], {help:'Shown on the "History & warranty" tab.'}) : null
+];
+TABS.content = v => {
+  const k = v.model, m = (S.models || {})[k];
+  const others = k ? usedBy(k).filter(x => x !== v) : [];
+  const parsed = h('span', {class:'cae-help'});
+  const upd = () => { const n = SITE.parseExtras(v.extrasText || '').length; parsed.textContent = n ? `${n} items will show under Features › Equipment (duplicates removed).` : 'Paste the extras list from AutoTrader or the dealer’s system as-is: commas or new lines both work.'; };
+  upd(); live.push(upd);
+  const has = m ? [m.stats && m.stats.length && `${m.stats.length} key stats`, m.specs && m.specs.length && `${m.specs.length} specs`, m.packs && m.packs.length && `${m.packs.length} packs`,
+    m.features && Object.keys(m.features).length && `${Object.keys(m.features).length} feature groups`, m.services && m.services.length && `${m.services.length} services`, m.highlights && m.highlights.length && `${m.highlights.length} highlights`].filter(Boolean) : [];
+  if (!v.highlights) v.highlights = [];
+  return [
+    fSelect(v, 'model', 'Model content', [['', 'None (bare listing)'], ...Object.keys(S.models || {}).map(x => [x, modelName(x)])],
+      {help:'Shared specs, packs and features for this model. With none and no extras below, the popup offers "Request the full spec sheet" instead.'}),
+    h('div', {style:'display:flex;gap:8px;margin:-4px 0 14px;flex-wrap:wrap'},
+      h('button', {class:'cae-btn sm', onclick: () => {
+        const nm = [String(v.title || '').replace(/^(19|20)\d\d\s+/, ''), v.sub].filter(Boolean).join(' ') || 'New model';
+        const nk = addModel(null, nm, true); S.models[nk].make = (v.title || '').replace(/^(19|20)\d\d\s+/, '').split(' ')[0] || '';
+        mut(() => { v.model = nk; }); ret = {name:'vehicle', id:v.id, tab:'content'}; go({name:'model', key:nk});
+        toast('New model content made and linked to this car. Fill it in, then use "Back to car".'); }}, k ? '+ New model content instead' : '+ Create model content for this car')),
+    m ? h('div', {class:'cae-res'}, h('div', {}, has.length ? 'Adds ' + has.join(', ') + '.' : 'This model content is empty.'),
+      h('div', {style:'margin-top:4px'}, others.length ? `Shared with ${others.length} other car${others.length > 1 ? 's' : ''}: editing it changes them too.` : 'Only this car uses it.'),
+      h('div', {style:'display:flex;gap:8px;margin-top:10px;flex-wrap:wrap'},
+        h('button', {class:'cae-btn sm', onclick: () => { ret = {name:'vehicle', id:v.id, tab:'content'}; go({name:'model', key:k}); }}, 'Edit model content'),
+        others.length ? h('button', {class:'cae-btn sm', onclick: () => { const nk = addModel(clone(m), modelName(k) + ' (' + (v.title || 'copy') + ')', true); mut(() => { v.model = nk; }); toast('This car now has its own copy of the model content.'); }}, 'Make a copy for this car only') : null)) : null,
+    h('label', {class:'cae-f'}, h('span', {class:'cae-l'}, 'Extras list', h('i', {}, 'optional')),
+      (() => { const ta = h('textarea', {class:'cae-in', rows:5, oninput(){ v.extrasText = this.value; touch(); }, onchange: commit}); ta.value = v.extrasText || ''; return ta; })(), parsed),
+    hlEditor(v.highlights, 'Highlights for this car', 'Optional. Shown with the model’s highlights, e.g. "Balance of warranty".')
+  ];
+};
+function hlEditor(arr, label, help){
+  return h('div', {class:'cae-f'}, h('span', {class:'cae-l'}, label), help ? h('span', {class:'cae-help', style:'margin:-2px 0 8px'}, help) : null,
+    h('div', {style:'display:grid;gap:8px'}, arr.map((x, i) => {
+      if (!Array.isArray(x.figures)) x.figures = [];
+      return h('div', {class:'cae-card'}, h('div', {class:'cae-card-h'}, h('b', {}, 'Highlight ' + (i + 1)),
+          h('button', {class:'cae-ib', title:'Move up', onclick: () => mut(() => swap(arr, i, i - 1))}, '↑'),
+          h('button', {class:'cae-ib', title:'Remove', onclick: () => mut(() => arr.splice(i, 1))}, '✕')),
+        fText(x, 'title', 'Title'), fText(x, 'text', 'Text', {multi:true, rows:2}),
+        fPairs(x, 'figures', 'Figures', ['e.g. 340', 'e.g. kW'], {max:4}));
+    })),
+    h('button', {class:'cae-add sm', onclick: () => mut(() => arr.push({title:'', text:'', figures:[]}))}, '+ Add highlight'));
+}
+
+/* ----- model content ----- */
+const usedBy = k => S.vehicles.filter(v => v.model === k);
+const modelName = k => { const m = (S.models || {})[k] || {}; return m.name || [m.make, k.replace(/-/g, ' ')].filter(Boolean).join(' · '); };
+function addModel(data, name, silent){
+  name = name || 'New model';
+  let key = slugify(name) || 'model', n = 2; const base = key;
+  while (S.models[key]) key = base + '-' + n++;
+  const m = data || {make:'', stats:[], specs:[], packs:[], features:{}, services:[], highlights:[]};
+  m.name = name;
+  if (silent) { S.models[key] = m; return key; }
+  mut(() => { S.models[key] = m; }); go({name:'model', key}); return key;
+}
+VIEWS.model = ({key}) => {
+  const m = S.models[key]; if (!m) { view = {name:'home'}; return VIEWS.home(); }
+  ['stats', 'specs', 'packs', 'services', 'highlights'].forEach(x => { if (!Array.isArray(m[x])) m[x] = []; });
+  if (!m.features || typeof m.features !== 'object') m.features = {};
+  const users = usedBy(key);
+  const back = ret ? () => { const r = ret; ret = null; go(r); } : null;
+  return [
+    backBar(ret ? 'Back to car' : 'All vehicles', back),
+    h('div', {class:'cae-h'}, h('h2', {}, modelName(key)), h('p', {}, users.length ? `Used by ${users.length} car${users.length > 1 ? 's' : ''}: ${users.slice(0, 4).map(v => v.title + ' ' + v.sub).join(', ')}${users.length > 4 ? '…' : ''}` : 'Not linked to any car yet. Link it on a car’s Popup content tab.')),
+    issueBox(issuesWhere(`Model content "${key}"`)),
+    h('div', {class:'cae-body'},
+      fText(m, 'name', 'Name in the editor', {half:true, help:'Only you see this.'}),
+      fText(m, 'make', 'Brand', {half:true, help:'Used for search engines.'}),
+      fPairs(m, 'stats', 'Key stats', ['e.g. Power', 'e.g. 140 kW'], {max:3, help:'The row of 3 at the top of the popup. Mileage and year come first for used cars.'}),
+      fPairs(m, 'specs', 'Specification', ['Label', 'Value'], {help:'The Specification tab.'}),
+      packsEditor(m),
+      featuresEditor(m),
+      fPairs(m, 'services', 'Services & plans', ['e.g. Maintenance plan', 'e.g. 5 years / 100,000 km'], {help:'Shown for new and demo cars.'}),
+      hlEditor(m.highlights, 'Highlights', 'Figures and a short line, e.g. range or performance.')),
+    h('div', {class:'cae-foot'},
+      h('button', {class:'cae-btn sm', onclick: () => addModel(clone(m), (m.name || modelName(key)) + ' copy')}, 'Duplicate'),
+      h('div', {class:'cae-sp'}),
+      users.length ? h('span', {class:'cae-help'}, 'Unlink it from its cars to delete it.') : confirmBtn('Delete', 'Click again to delete', () => { mut(() => { delete S.models[key]; }); go({name:'home'}); }))
+  ];
+};
+function packsEditor(m){
+  return h('div', {class:'cae-f'}, h('span', {class:'cae-l'}, 'Packs', h('i', {}, 'optional')),
+    h('div', {style:'display:grid;gap:8px'}, m.packs.map((p, i) => {
+      if (!Array.isArray(p.items)) p.items = []; if (!Array.isArray(p.detail)) p.detail = [];
+      return h('div', {class:'cae-card'}, h('div', {class:'cae-card-h'}, h('b', {}, p.title || 'Pack ' + (i + 1)),
+          h('button', {class:'cae-ib', title:'Move up', onclick: () => mut(() => swap(m.packs, i, i - 1))}, '↑'),
+          h('button', {class:'cae-ib', title:'Remove pack', onclick: () => mut(() => m.packs.splice(i, 1))}, '✕')),
+        fText(p, 'title', 'Pack name'), fLines(p, 'items', 'What’s included'),
+        fText(p, 'intro', 'Intro in the "Read more" panel', {multi:true, rows:2}),
+        h('div', {class:'cae-sub'}, h('span', {class:'cae-l'}, 'Feature cards in "Read more"', h('i', {}, 'optional')),
+          p.detail.map((d, j) => h('div', {class:'cae-card'}, h('div', {class:'cae-card-h'}, h('b', {}, 'Card ' + (j + 1)),
+              h('button', {class:'cae-ib', title:'Remove card', onclick: () => mut(() => p.detail.splice(j, 1))}, '✕')),
+            h('div', {class:'cae-thumb1'}, d.img && String(d.img).length > 1 ? h('img', {src: imgURL(d.img), alt:''}) : h('span', {class:'cae-help'}, 'Uses the car’s photo set'),
+              (() => { const inp = h('input', {type:'file', accept:'image/*', style:'display:none', async onchange(){ const f = this.files[0]; if (!f) return; const k = await ingest(f, (p.title || 'pack') + '-' + (d.title || 'feature')); if (k) mut(() => { d.img = k; }); }});
+                return h('label', {class:'cae-btn sm'}, inp, 'Upload image'); })()),
+            fText(d, 'title', 'Title'), fText(d, 'text', 'Text', {multi:true, rows:2}))),
+          h('button', {class:'cae-add sm', onclick: () => mut(() => p.detail.push({img:'', title:'', text:''}))}, '+ Add feature card')));
+    })),
+    h('button', {class:'cae-add sm', onclick: () => mut(() => m.packs.push({title:'', items:[], intro:'', detail:[]}))}, '+ Add pack'),
+    h('span', {class:'cae-help'}, 'Packs show in the popup with a "Read more" panel when they have feature cards.'));
+}
+function featuresEditor(m){
+  const groups = Object.entries(m.features);
+  const rebuild = (entries) => { m.features = Object.fromEntries(entries); };
+  return h('div', {class:'cae-f'}, h('span', {class:'cae-l'}, 'Features', h('i', {}, 'groups › sub-groups › items')),
+    h('div', {style:'display:grid;gap:8px'}, groups.map(([g, subs], gi) => {
+      const sEntries = Object.entries(subs || {});
+      return h('div', {class:'cae-card'},
+        h('div', {class:'cae-card-h'}, (() => { const i = h('input', {class:'cae-in' + (isPH(g) ? ' ph' : ''), onfocus(){ if (isPH(this.value)) this.select(); },
+            onchange(){ const nv = this.value.trim() || 'Group'; if (nv === g) return; if (m.features[nv]) { toast('A group with that name exists.'); this.value = g; return; } mut(() => rebuild(groups.map(([k, x]) => [k === g ? nv : k, x]))); }}); i.value = g; return i; })(),
+          h('button', {class:'cae-ib', title:'Remove group', onclick: () => mut(() => rebuild(groups.filter(([k]) => k !== g)))}, '✕')),
+        h('div', {class:'cae-sub'}, sEntries.map(([sg, items]) => h('div', {style:'display:grid;gap:6px'},
+          h('div', {class:'cae-card-h'}, (() => { const i = h('input', {class:'cae-in' + (isPH(sg) ? ' ph' : ''), onfocus(){ if (isPH(this.value)) this.select(); },
+              onchange(){ const nv = this.value.trim() || 'Sub-group'; if (nv === sg) return; if (subs[nv]) { toast('A sub-group with that name exists.'); this.value = sg; return; } mut(() => { m.features[g] = Object.fromEntries(sEntries.map(([k, x]) => [k === sg ? nv : k, x])); }); }}); i.value = sg; return i; })(),
+            h('button', {class:'cae-ib', title:'Remove sub-group', onclick: () => mut(() => { m.features[g] = Object.fromEntries(sEntries.filter(([k]) => k !== sg)); })}, '✕')),
+          fLines(subs, sg, 'Items'))),
+          h('button', {class:'cae-add sm', onclick: () => mut(() => { let n = 'New sub-group', c = 2; while (subs[n]) n = 'New sub-group ' + c++; subs[n] = []; })}, '+ Add sub-group')));
+    })),
+    h('button', {class:'cae-add sm', onclick: () => mut(() => { let n = 'New group', c = 2; while (m.features[n]) n = 'New group ' + c++; m.features[n] = {'General': []}; })}, '+ Add feature group'),
+    h('span', {class:'cae-help'}, 'The Features tab. A car’s extras list is added as its own "Equipment" group.'));
+}
+
+/* ----- section ----- */
+VIEWS.section = ({i}) => {
+  const s = S.sections[i]; if (!s) { view = {name:'home'}; return VIEWS.home(); }
+  let prevAuto = slugify(s.label);
+  const only = s.vehicles.filter(id => !S.sections.some(x => x !== s && x.vehicles.includes(id)));
+  return [
+    backBar('All vehicles'),
+    h('div', {class:'cae-h'}, h('h2', {}, s.title || 'Section'), h('p', {}, `${s.vehicles.length} of ${MAX_PER_SECTION} cars`)),
+    issueBox(issuesWhere(`Section ${i + 1} (`)),
+    h('div', {class:'cae-body'},
+      fText(s, 'title', 'Title', {side:'section heading'}),
+      fText(s, 'intro', 'Intro', {multi:true, rows:2}),
+      fText(s, 'label', 'Short label', {half:true, help:'Menu and popup breadcrumb.', after: x => { if (s.id === prevAuto || /^section(-label)?(-\d+)?$/.test(s.id)) s.id = uniqueSecId(slugify(x) || 'section', s); prevAuto = slugify(x); }}),
+      fText(s, 'cta', 'Card button text', {half:true, help:'Leave empty for no button.'}),
+      fSeg(s, 'cardStyle', 'Card style', [[undefined, 'Full'], ['compact', 'Compact']], {after: x => { if (!x) delete s.cardStyle; }}),
+      (() => { const c = (S.settings || {}).carousel || {}, at = c.galleryAutoAt || 100, def = c.galleryDefault === undefined || c.galleryDefault === 'auto' ? S.vehicles.length < at : c.galleryDefault !== false;
+        return fSeg(s, 'cardGallery', 'Card photos', [[undefined, 'Site default', def ? 'gallery' : `first photo (${at}+ cars)`], [true, 'Photo gallery', 'up to 5'], [false, 'First photo only']],
+          {after: x => { if (x === undefined) delete s.cardGallery; }, help: 'Choose this once the section is populated. Galleries load more photos on phones; sites with ' + at + '+ cars default to the first photo only. On phones and tablets each row shows ' + (c.batch || 8) + ' cars, then loads more at the end.'}); })(),
+      fSelect(s, 'detailStyle', 'How details open', [['', 'Site default (slide-up panel)'], ['sheet', 'Slide-up panel'], ['page', 'Full-screen page'], ['inline', 'Expands in the page']], {after: x => { if (!x) delete s.detailStyle; }}),
+      h('details', {class:'cae-adv'}, h('summary', {}, 'Link name'), fText(s, 'id', 'Link name', {help:'Menu link: yoursite.co.za/#' + s.id, after: x => { s.id = slugify(x); }}))),
+    h('div', {class:'cae-foot'},
+      h('button', {class:'cae-btn sm', disabled: i === 0 || null, onclick: () => { mut(() => swap(S.sections, i, i - 1)); go({name:'section', i:i - 1}); }}, 'Move up'),
+      h('button', {class:'cae-btn sm', disabled: i === S.sections.length - 1 || null, onclick: () => { mut(() => swap(S.sections, i, i + 1)); go({name:'section', i:i + 1}); }}, 'Move down'),
+      h('div', {class:'cae-sp'}),
+      confirmBtn('Delete section', only.length ? `Deletes ${only.length} car${only.length > 1 ? 's' : ''} too. Click again` : 'Click again to delete', () => {
+        mut(() => { S.sections.splice(i, 1); S.vehicles = S.vehicles.filter(v => !only.includes(v.id)); }); go({name:'home'}); }))
+  ];
+};
+function uniqueSecId(base, self){ let s = base, n = 2; while (S.sections.some(x => x !== self && x.id === s)) s = base + '-' + n++; return s; }
+function addSection(){
+  const s = {id: uniqueSecId('section'), label:'Section label', title:'Section title', intro:'Section intro text', cta:'View details', vehicles:[]};
+  mut(() => S.sections.push(s)); go({name:'section', i:S.sections.length - 1});
+}
+
+/* ----- finance, dealer, site ----- */
+VIEWS.finance = () => {
+  const f = S.dealer.finance;
+  return [backBar('All vehicles'), h('div', {class:'cae-h'}, h('h2', {}, 'Finance defaults'), h('p', {}, 'Every "worked out" monthly payment uses these, unless a car has custom finance. Visitors can change deposit, term and balloon with the sliders.')),
+    issueBox(issuesWhere('Finance defaults')),
+    h('div', {class:'cae-body'},
+      fText(f, 'depositPct', 'Deposit', {num:true, float:true, half:true, side:'%'}),
+      fSelect(f, 'termMonths', 'Term', (f.termOptions || [36, 48, 60, 72, 84]).map(n => [n, n + ' months']), {num:true, half:true, rerender:false}),
+      fText(f, 'ratePct', 'Interest rate', {num:true, float:true, half:true, side:'%'}),
+      fText(f, 'balloonPct', 'Balloon', {num:true, float:true, half:true, side:'%'}),
+      fText(f, 'initiationFee', 'Initiation fee', {num:true, float:true, half:true, prefix:'R'}),
+      fText(f, 'monthlyFee', 'Monthly service fee', {num:true, float:true, half:true, prefix:'R'}),
+      fText(f, 'depositMax', 'Deposit slider max', {num:true, half:true, side:'%'}),
+      fText(f, 'balloonMax', 'Balloon slider max', {num:true, half:true, side:'%'}),
+      fLines(f, 'termOptions', 'Term options (months)', {num:true, rows:3}),
+      fText(f, 'provider', 'Finance provider'),
+      fText(f, 'disclaimer', 'Disclaimer', {multi:true, rows:4}),
+      fTog(f, 'confirmed', 'Confirmed with the dealer', 'Required before launch. The defaults are typical South African values.'))];
+};
+VIEWS.dealer = () => {
+  const d = S.dealer; if (!Array.isArray(d.hours)) d.hours = []; if (!d.salesperson) d.salesperson = {};
+  return [backBar('All vehicles'), h('div', {class:'cae-h'}, h('h2', {}, 'Dealer & contact'), h('p', {}, 'Used in the popups, forms, WhatsApp messages and footer.')),
+    issueBox(issuesWhere('Dealer details')),
+    h('div', {class:'cae-body'},
+      fText(d, 'name', 'Dealer name'), fText(d, 'short', 'Logo text', {half:true}), fText(d, 'tagline', 'Under the logo', {half:true, hint:'e.g. BMW · MINI'}),
+      fText(d, 'phone', 'Phone', {half:true}), fText(d, 'whatsapp', 'WhatsApp number', {half:true, num:true, help:'27 then the number, no 0 or +. e.g. 27821234567'}),
+      fText(d, 'email', 'Email', {type:'email'}), fText(d, 'address', 'Address'), fText(d, 'mapsQuery', 'Google Maps search', {help:'What to search on Google Maps for directions.'}),
+      fPairs(d, 'hours', 'Trading hours', ['e.g. Mon – Fri', 'e.g. 08:00 – 17:00']),
+      fText(d, 'priceNote', 'Price note', {multi:true, rows:2, help:'Under every price in the popups.'}),
+      fText(d.salesperson, 'name', 'Salesperson', {half:true}), fText(d.salesperson, 'role', 'Role', {half:true}),
+      fText(d.salesperson, 'initials', 'Initials', {half:true, help:'Shown in the round badge.'}))];
+};
+VIEWS.site = () => {
+  if (!S.meta) S.meta = {}; if (!S.theme) S.theme = {};
+  const col = h('input', {type:'color', value: S.theme.accent || '#4c5a73', style:'width:46px;height:38px;border:1px solid #cdd2db;border-radius:8px;padding:2px;background:#fff',
+    oninput(){ S.theme.accent = this.value; touch(); }, onchange(){ commit(); render(); }});
+  return [backBar('All vehicles'), h('div', {class:'cae-h'}, h('h2', {}, 'Page title, sharing & colour')), issueBox(issuesWhere(w => w === 'Brand theme' || w === 'Sharing')),
+    h('div', {class:'cae-body'},
+      fText(S.meta, 'title', 'Page title', {help:'Browser tab, Google result and link preview, e.g. "Automotive Dealership | New, demo and pre-owned cars".'}),
+      fText(S.meta, 'description', 'Page description', {multi:true, rows:3, help:'One or two sentences for Google results and link previews.'}),
+      fText(S.meta, 'url', 'Live site address', {help:'The full web address once the site is live, e.g. https://www.dealer.co.za/. Link previews need it.'}),
+      h('div', {class:'cae-f'}, h('span', {class:'cae-l'}, 'Share image'),
+        S.meta.shareImage ? h('img', {src: imgURL(S.meta.shareImage), alt:'', style:'width:100%;max-width:360px;aspect-ratio:1200/630;object-fit:cover;border-radius:8px;display:block;margin-bottom:6px;background:#eef0f3'}) : null,
+        photoPicker(addShareImage, S.meta.shareImage ? 'Replace share image' : '+ Add share image (cropped to 1200 \u00d7 630)'),
+        h('span', {class:'cae-help'}, 'The picture shown when the link is sent on WhatsApp, Facebook or LinkedIn.')),
+      h('div', {class:'cae-f'}, h('span', {class:'cae-l'}, 'Accent colour'), h('div', {style:'display:flex;gap:8px'}, col, fText(S.theme, 'accent', '', {after: () => { col.value = S.theme.accent; }}))),
+      fTog(S.theme, 'confirmed', 'Brand colour set for this client', 'Required before launch.'))];
+};
+VIEWS.checks = () => {
+  const groups = {}; issues.forEach(i => (groups[i.where] = groups[i.where] || []).push(i.what));
+  const target = w => { let m;
+    if ((m = /^Vehicle (\d+):/.exec(w))) { const v = S.vehicles[m[1] - 1]; return v && (() => go({name:'vehicle', id:v.id, tab:'card'})); }
+    if ((m = /^Section (\d+) \(/.exec(w))) return () => go({name:'section', i:m[1] - 1});
+    if ((m = /^Model content "(.+)"$/.exec(w))) return () => go({name:'model', key:m[1]});
+    if (w === 'Finance defaults') return () => go({name:'finance'});
+    if (w === 'Dealer details') return () => go({name:'dealer'});
+    if (w === 'Brand theme' || w === 'Sharing') return () => go({name:'site'});
+    if (w === 'Phone images') return makeMissingMobile;
+    return null; };
+  return [backBar('All vehicles'), h('div', {class:'cae-h'}, h('h2', {}, 'Pre-launch check'),
+      h('p', {}, issues.length ? `${issues.length} items must be fixed before launch files can be exported.` : 'All clear. Export the launch files whenever you’re ready.')),
+    Object.entries(groups).map(([w, list]) => { const t = target(w);
+      return h('div', {class:'cae-chkgrp'}, h('h4', {}, w, h('span', {class:'cae-badge'}, list.length), t ? h('button', {class:'cae-btn sm', onclick:t}, 'Fix') : null), h('ul', {}, list.map(x => h('li', {}, pretty(x))))); })];
+};
+
+/* ---------- live preview ---------- */
+function previewHTML(){
+  const d = clone(S); d.meta = Object.assign({}, d.meta, {note:'', showChecks:false});
+  return buildHTML(d, false).replace('<title>', () => SCR + 'window.__CA_PREVIEW=1;window.__CA_IMGMAP=parent.__CA_IMGMAP;' + SCR_END + '<style>.ca-noanim *{transition:none!important}.cae-chip{position:absolute;left:10px;top:10px;z-index:4;height:30px;border-radius:999px;border:0;background:#16181d;color:#fff;font:600 12.5px/1 "Hanken Grotesk",system-ui,sans-serif;padding:0 12px;opacity:0;transition:opacity .15s;cursor:pointer}.card:hover .cae-chip,.cae-sel .cae-chip{opacity:1}.cae-sel{outline:3px solid #2f5bea;outline-offset:2px}.cae-chip.bar{position:static;opacity:1;margin-right:4px;white-space:nowrap;flex:none}</style><title>');
+}
+function schedulePreview(){ clearTimeout(schedulePreview.t); schedulePreview.t = setTimeout(refreshPreview, 350); }
+function refreshPreview(){
+  const old = frames.querySelector('iframe.live');
+  let st = null;
+  try { const w = old.contentWindow, d = w.document; st = {y: w.scrollY, rails: [...d.querySelectorAll('main .rail')].map(r => r.scrollLeft), open: w.CASite && w.CASite.current(), vy: (d.getElementById('vp-scroll') || {}).scrollTop || 0}; } catch(_) {}
+  const f = h('iframe', {title:'Live preview', style:'visibility:hidden'});
+  f.addEventListener('load', () => {
+    try { const w = f.contentWindow, d = w.document;
+      decorate(f);
+      if (st) { d.documentElement.classList.add('ca-noanim'); w.scrollTo(0, st.y); d.querySelectorAll('main .rail').forEach((r, i) => { if (st.rails[i] != null) r.scrollLeft = st.rails[i]; });
+        if (st.open && w.CASite) { w.CASite.openVehicle(st.open); const vs = d.getElementById('vp-scroll'); if (vs) vs.scrollTop = st.vy; }
+        setTimeout(() => d.documentElement.classList.remove('ca-noanim'), 60); }
+      if (view.name === 'vehicle') markPreview(view.id, false, f);
+    } catch(_) {}
+    f.style.visibility = ''; f.classList.add('live');
+    frames.querySelectorAll('iframe').forEach(x => { if (x !== f) x.remove(); });
+  }, {once:true});
+  f.srcdoc = previewHTML();   // set before inserting, so the only load event is the preview's own
+  frames.append(f);
+}
+function decorate(f){
+  const d = f.contentDocument;
+  d.querySelectorAll('main .card[data-id]').forEach(c => { const b = d.createElement('button'); b.className = 'cae-chip'; b.textContent = 'Edit'; b.dataset.edit = c.dataset.id; c.querySelector('.cm').appendChild(b); });
+  const bar = d.querySelector('.vp-bar .sp'); if (bar) { const b = d.createElement('button'); b.className = 'cae-chip bar'; b.textContent = 'Edit this car'; b.dataset.editCur = '1'; bar.after(b); }
+  d.addEventListener('click', e => { const b = e.target.closest && e.target.closest('[data-edit],[data-edit-cur]'); if (!b) return;
+    e.preventDefault(); e.stopPropagation();
+    const id = b.dataset.edit || (f.contentWindow.CASite && f.contentWindow.CASite.current());
+    if (id) { root.classList.remove('pv'); go({name:'vehicle', id, tab:'card'}); } }, true);
+}
+function markPreview(id, scroll, f){
+  f = f || frames.querySelector('iframe.live'); if (!f) return;
+  try { const d = f.contentDocument; d.querySelectorAll('.cae-sel').forEach(x => x.classList.remove('cae-sel'));
+    const c = d.querySelector(`main .card[data-id="${id}"]`); if (!c) return; c.classList.add('cae-sel');
+    if (scroll) { const r = c.closest('.rail'); r.scrollTo({left: c.offsetLeft - r.clientWidth / 2 + c.offsetWidth / 2, behavior:'smooth'});
+      const top = c.getBoundingClientRect().top + f.contentWindow.scrollY - 120; f.contentWindow.scrollTo({top, behavior:'smooth'}); }
+  } catch(_) {}
+}
+function previewPopup(id){
+  const f = frames.querySelector('iframe.live'); root.classList.add('pv');
+  try { f.contentWindow.CASite.openVehicle(id); } catch(_) {}
+}
+
+/* ---------- building the page ---------- */
+function shareTags(d){   // description, canonical, Open Graph and Twitter tags from data.meta (link previews read these from <head>)
+  const m = d.meta || {}, e = x => String(x).replace(/[&<>"]/g, c => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;'})[c]);
+  const title = m.title || d.dealer.name, desc = String(m.description || '').trim();
+  let url = String(m.url || '').trim(); if (url && !/\/$/.test(url)) url += '/';
+  const k = m.shareImage, img = k && url && !/^(data:|blob:)/.test(k) ? (/^https?:/.test(k) ? k : url + 'img/' + k + (/\.[a-z0-9]{3,4}$/i.test(k) ? '' : '.jpg')) : '';
+  const t = [];
+  if (desc) t.push(`<meta name="description" content="${e(desc)}">`);
+  if (url) t.push(`<link rel="canonical" href="${e(url)}">`);
+  t.push('<meta property="og:type" content="website">', `<meta property="og:site_name" content="${e(d.dealer.name)}">`, `<meta property="og:title" content="${e(title)}">`);
+  if (desc) t.push(`<meta property="og:description" content="${e(desc)}">`);
+  if (url) t.push(`<meta property="og:url" content="${e(url)}">`);
+  if (img) t.push(`<meta property="og:image" content="${e(img)}">`, '<meta property="og:image:type" content="image/jpeg">', '<meta property="og:image:width" content="1200">', '<meta property="og:image:height" content="630">');
+  t.push('<meta property="og:locale" content="en_ZA">', `<meta name="twitter:card" content="${img ? 'summary_large_image' : 'summary'}">`, `<meta name="twitter:title" content="${e(title)}">`);
+  if (desc) t.push(`<meta name="twitter:description" content="${e(desc)}">`);
+  if (img) t.push(`<meta name="twitter:image" content="${e(img)}">`);
+  { const ic = m.icons || {};   // favicon + home-screen icon (files in img/)
+    if (ic.ico) t.push(`<link rel="icon" href="img/${e(ic.ico)}" sizes="any">`);
+    if (ic.png) t.push(`<link rel="icon" type="image/png" sizes="32x32" href="img/${e(ic.png)}">`);
+    if (ic.apple) t.push(`<link rel="apple-touch-icon" href="img/${e(ic.apple)}">`);
+    t.push('<meta name="theme-color" content="#121316">'); }
+  return '\n<!' + '--ca-share-->\n' + t.join('\n') + '\n<!' + '--/ca-share-->';
+}
+function buildHTML(data, withEditor){
+  let body = window.__CA_SRC; const t0 = body.indexOf('<title>'); if (t0 > 0) body = body.slice(t0);
+  body = body.replace(new RegExp('\\s*<!' + '--ca-share-->[\\s\\S]*?<!' + '--/ca-share-->', 'g'), '');
+  const json = JSON.stringify(data, null, 2).replace(/<\//g, '<\\/');
+  const title = String((data.meta && data.meta.title) || data.dealer.name).replace(/[&<>]/g, c => ({'&':'&amp;', '<':'&lt;', '>':'&gt;'})[c]);
+  body = body.replace(/<title>[\s\S]*?<\/title>/, () => '<title>' + title + '</title>')
+             .replace(/(<script type="application\/json" id="site-data">)[\s\S]*?(<\/script>)/, (m, a, b) => a + '\n' + json + '\n' + b);
+  if (!withEditor) body = body.replace(EDITOR_BLOCK, '');
+  // the page's own head tags (title, fonts) and the share tags go inside <head>, where Google and link previews (WhatsApp) read them
+  const hm = body.match(/^\s*(?:(?:<title>[\s\S]*?<\/title>|<meta\b[^>]*>|<link\b[^>]*>)\s*)+/);
+  const head = (hm ? hm[0].trim() : '') + shareTags(data);
+  if (hm) body = body.slice(hm[0].length);
+  return SKEL.replace('</head><body>\n', '<!' + '--ca-head-->\n' + head + '\n<!' + '--/ca-head-->\n</head><body>\n') + body.replace(/\s+$/, '') + '\n</body></html>\n';
+}
+function imageKeys(data){
+  const keys = new Set();
+  data.vehicles.forEach(v => { (v.images || []).forEach(k => keys.add(k));
+    const m = (data.models || {})[v.model]; const ci = (v.images[0] || '').replace(/-[a-d]$/, '');
+    if (m) (m.packs || []).forEach(p => (p.detail || []).forEach(d => { if (d.img) keys.add(String(d.img).length > 1 ? d.img : ci + '-' + d.img); })); });
+  Object.values(data.models || {}).forEach(m => (m.packs || []).forEach(p => (p.detail || []).forEach(d => { if (d.img && String(d.img).length > 1) keys.add(d.img); })));
+  { const walk = o => { if (Array.isArray(o)) o.forEach(walk); else if (o && typeof o === 'object') Object.entries(o).forEach(([k, v]) => { if ((k === 'img' || k === 'imgMobile') && typeof v === 'string' && v) keys.add(v); else walk(v); }); }; walk(data.pharoah || {}); }   // Pharoah hero + banner images
+  if (data.meta && data.meta.shareImage) keys.add(data.meta.shareImage);
+  return [...keys].filter(k => k && !/^(data:|blob:|https?:)/.test(k));
+}
+const blobToDataURL = b => new Promise(r => { const fr = new FileReader(); fr.onload = () => r(fr.result); fr.readAsDataURL(b); });
+async function embedNew(data){ // swap unsaved photo keys for data: URLs (single-file save)
+  const d = clone(data), map = {};
+  for (const k of Object.keys(NEWIMG)) map[k] = await blobToDataURL(NEWIMG[k]);
+  const walk = o => { if (Array.isArray(o)) o.forEach((x, i) => { if (typeof x === 'string' && map[x]) o[i] = map[x]; else walk(x); });
+    else if (o && typeof o === 'object') Object.keys(o).forEach(k => { if (typeof o[k] === 'string' && map[o[k]]) o[k] = map[o[k]]; else walk(o[k]); }); };
+  walk(d);
+  if (d.mobileImages) Object.keys(NEWMOB).forEach(k => delete d.mobileImages[k]);   // a single-file save can't carry the phone copies; phones use the photo itself
+  return d;
+}
+function savedOK(){
+  SAVED = JSON.stringify(S); Object.keys(NEWIMG).forEach(k => delete NEWIMG[k]); Object.keys(NEWMOB).forEach(k => delete NEWMOB[k]);
+  try { localStorage.removeItem(draftKey); } catch(_) {}
+  updateTop();
+}
+
+/* ---------- save ---------- */
+async function save(){
+  commit();
+  if (isMaster()) return toast('This is the master template, so it can\u2019t be saved. Export a working copy to start a build.', 6000);
+  if (!isDirty()) return toast('Nothing new to save.');
+  btnSave.disabled = true; btnSave.textContent = 'Saving…';
+  try {
+    const art = ART ? await Promise.race([ART, new Promise(r => setTimeout(() => r(null), 4000))]) : null;
+    if (art) return await saveArtifact(art);
+    if (location.protocol === 'file:' && window.showDirectoryPicker) return await saveFolder();
+    await saveDownload();
+  } catch(e) { toast('Not saved: ' + (e && (e.message || e.code) || e), 6000); }
+  finally { btnSave.disabled = false; updateTop(); }
+}
+async function saveArtifact(art){
+  const files = {'index.html': buildHTML(S, true)};
+  Object.entries(NEWIMG).forEach(([k, b]) => { files['img/' + k + '.jpg'] = b; });
+  Object.entries(NEWMOB).forEach(([k, m]) => { files['img/m/card/' + k + '.webp'] = m.card; files['img/m/gallery/' + k + '.webp'] = m.gallery; });
+  try { await art.publish(files); savedOK(); toast('Saved. This is now the latest version of this page.'); return; }
+  catch(e) {
+    const c = e && e.code;
+    if (c === 'conflict') return toast('Someone saved a newer version. The page is reloading to it; your edits are kept as a draft in this browser.', 7000);
+    if (c === 'not_writer' || c === 'not_granted' || c === 'not_declared') { toast('This copy is view-only. Use Export to download a working copy.', 6000); return; }
+    if (!['capability_disabled', 'capability_removed', 'read_only_path', 'invalid_content', 'too_large'].includes(c)) throw e;
+  }
+  // files form not available here (e.g. a publicly shared page): save as one file with photos inside it
+  const html = buildHTML(await embedNew(S), true);
+  try { sessionStorage.setItem('cae-open', '1'); } catch(_) {}
+  const was = SAVED; SAVED = JSON.stringify(S);   // so the reload isn't blocked by the unsaved-changes prompt
+  try { await art.publish(html); } catch(e) { SAVED = was; throw e; }
+  try { localStorage.removeItem(draftKey); } catch(_) {}
+  toast('Saved. Reloading…');
+}
+async function saveFolder(){
+  if (!dirHandle) {
+    const ok = await ask('Save to this site’s folder', 'Choose the folder this index.html file is in. The page is saved there as index.html and new photos go in its img folder. Chrome asks once per session.', 'Choose folder');
+    if (!ok) return;
+    dirHandle = await window.showDirectoryPicker({mode:'readwrite'});
+  }
+  const img = await dirHandle.getDirectoryHandle('img', {create:true});
+  for (const [k, b] of Object.entries(NEWIMG)) { const fh = await img.getFileHandle(k + '.jpg', {create:true}); const w = await fh.createWritable(); await w.write(b); await w.close(); }
+  if (Object.keys(NEWMOB).length) { const m = await img.getDirectoryHandle('m', {create:true});
+    for (const kind of ['card', 'gallery']) { const d = await m.getDirectoryHandle(kind, {create:true});
+      for (const [k, x] of Object.entries(NEWMOB)) { const fh = await d.getFileHandle(k + '.webp', {create:true}); const w = await fh.createWritable(); await w.write(x[kind]); await w.close(); } } }
+  const fh = await dirHandle.getFileHandle('index.html', {create:true}); const w = await fh.createWritable(); await w.write(buildHTML(S, true)); await w.close();
+  savedOK(); toast('Saved to ' + dirHandle.name + '/index.html');
+}
+async function saveDownload(){
+  const html = buildHTML(await embedNew(S), true);
+  await deliver('index.html', new Blob([html], {type:'text/html'}));
+  savedOK(); toast('Downloaded index.html (new photos are inside the file). Replace your copy with it.', 6000);
+}
+async function deliver(name, blob){
+  const dl = DL ? await Promise.race([DL, new Promise(r => setTimeout(() => r(null), 4000))]) : null;
+  if (dl) { await dl.save({filename:name, data:blob}); return; }
+  const a = h('a', {href: URL.createObjectURL(blob), download:name}); document.body.append(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 4000);
+}
+function ask(title, text, okLabel){
+  return new Promise(res => {
+    const done = v => { modal.hidden = true; modal.replaceChildren(); res(v); };
+    modal.replaceChildren(h('div', {class:'cae-dlg'}, h('h3', {}, title), h('p', {}, text),
+      h('div', {class:'cae-dlg-x', style:'gap:8px'}, h('button', {class:'cae-btn', onclick: () => done(false)}, 'Cancel'), h('button', {class:'cae-btn pri', onclick: () => done(true)}, okLabel))));
+    modal.hidden = false;
+  });
+}
+
+/* ---------- export ---------- */
+const CRC = (() => { const t = new Uint32Array(256); for (let n = 0; n < 256; n++) { let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; t[n] = c >>> 0; } return t; })();
+function crc32(u){ let c = 0xFFFFFFFF; for (let i = 0; i < u.length; i++) c = CRC[(c ^ u[i]) & 255] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; }
+function zip(files){
+  const enc = new TextEncoder(), parts = [], central = []; let off = 0;
+  files.forEach(f => {
+    const nm = enc.encode(f.name), d = f.data, crc = crc32(d);
+    const lh = new DataView(new ArrayBuffer(30));
+    [[0, 0x04034b50, 4], [4, 20, 2], [6, 0x0800, 2], [8, 0, 2], [10, 0, 2], [12, 0x21, 2], [14, crc, 4], [18, d.length, 4], [22, d.length, 4], [26, nm.length, 2], [28, 0, 2]]
+      .forEach(([o, v, s]) => s === 4 ? lh.setUint32(o, v, true) : lh.setUint16(o, v, true));
+    const ch = new DataView(new ArrayBuffer(46));
+    [[0, 0x02014b50, 4], [4, 20, 2], [6, 20, 2], [8, 0x0800, 2], [10, 0, 2], [12, 0, 2], [14, 0x21, 2], [16, crc, 4], [20, d.length, 4], [24, d.length, 4], [28, nm.length, 2], [30, 0, 2], [32, 0, 2], [34, 0, 2], [36, 0, 2], [38, 0, 4], [42, off, 4]]
+      .forEach(([o, v, s]) => s === 4 ? ch.setUint32(o, v, true) : ch.setUint16(o, v, true));
+    parts.push(lh, nm, d); central.push(ch, nm); off += 30 + nm.length + d.length;
+  });
+  const cs = central.reduce((a, p) => a + p.byteLength, 0), end = new DataView(new ArrayBuffer(22));
+  end.setUint32(0, 0x06054b50, true); end.setUint16(8, files.length, true); end.setUint16(10, files.length, true); end.setUint32(12, cs, true); end.setUint32(16, off, true);
+  return new Blob([...parts, ...central, end], {type:'application/zip'});
+}
+async function readImage(k){
+  if (NEWIMG[k]) return NEWIMG[k];
+  try { const r = await fetch(imgURL(k)); if (r.ok) return await r.blob(); } catch(_) {}
+  if (dirHandle) { try { const img = await dirHandle.getDirectoryHandle('img'); return await (await img.getFileHandle(k + '.jpg')).getFile(); } catch(_) {} }
+  return null;
+}
+async function readPath(rel){   // a file under img/ (e.g. "m/card/x.webp"), from the site or the chosen folder
+  try { const r = await fetch('img/' + rel); if (r.ok) return await r.blob(); } catch(_) {}
+  if (dirHandle) { try { let d = await dirHandle.getDirectoryHandle('img'); const parts = rel.split('/');
+    for (const q of parts.slice(0, -1)) d = await d.getDirectoryHandle(q); return await (await d.getFileHandle(parts[parts.length - 1])).getFile(); } catch(_) {} }
+  return null;
+}
+async function buildZip(launch){
+  commit();
+  if (location.protocol === 'file:' && !dirHandle && window.showDirectoryPicker &&
+      await ask('Choose the site folder', 'To pack the photos, Chrome needs the folder this index.html file is in (with its img folder).', 'Choose folder'))
+    dirHandle = await window.showDirectoryPicker({mode:'readwrite'});
+  const data = clone(S);
+  if (launch) data.meta = Object.assign({}, data.meta, {note:'', label:'', showChecks:false});
+  if (data.meta && data.meta.master) { delete data.meta.master; delete data.meta.lockName; data.meta.note = '<b>Working copy.</b> Replace every placeholder before launch. Forms send nothing.'; data.meta.label = 'Build from template v1.3'; }
+  const files = [], missing = [];
+  for (const k of imageKeys(data)) { const b = await readImage(k); if (b) files.push({name:'img/' + k + '.jpg', data: new Uint8Array(await b.arrayBuffer())}); else missing.push(k); }
+  // phone copies: packed when found; a photo whose copies can't be found is taken off the list, so phones load the photo itself
+  const mob = data.mobileImages || {};
+  for (const k of Object.keys(mob)) { let found = 0;
+    for (const kind of ['card', 'gallery', 'site']) { const rel = 'm/' + kind + '/' + k + '.webp';
+      const b = NEWMOB[k] ? NEWMOB[k][kind] : await readPath(rel);
+      if (b) { files.push({name:'img/' + rel, data: new Uint8Array(await b.arrayBuffer())}); found++; } }
+    if (!found) delete mob[k]; }
+  for (const rel of Object.values((data.meta || {}).icons || {})) { const b = await readPath(rel); if (b) files.push({name:'img/' + rel, data: new Uint8Array(await b.arrayBuffer())}); else missing.push(rel); }   // favicon files
+  files.unshift({name:'index.html', data: new TextEncoder().encode(buildHTML(data, !launch))});
+  return {blob: zip(files), missing, count: files.length - 1};
+}
+function exportDlg(){
+  updateTop();
+  const n = issues.length, base = slugify((S.meta && S.meta.title) || S.dealer.name) || 'site';
+  const run = async (launch, btn) => {
+    btn.disabled = true; btn.textContent = 'Packing…';
+    try { const z = await buildZip(launch);
+      if (z.missing.length && !launch) toast(`${z.missing.length} photo file${z.missing.length > 1 ? 's' : ''} couldn’t be read here and ${z.missing.length > 1 ? 'were' : 'was'} left out: ${z.missing.slice(0, 3).join(', ')}`, 8000);
+      if (z.missing.length && launch) { toast(`Can’t export launch files: ${z.missing.length} photo file${z.missing.length > 1 ? 's are' : ' is'} missing (${z.missing.slice(0, 3).join(', ')}). Open the page from its folder, or re-add those photos.`, 9000); return; }
+      await deliver(base + (launch ? '-launch' : '-working-copy') + '.zip', z.blob);
+      modal.hidden = true; toast(launch ? 'Launch files exported.' : 'Working copy exported.');
+    } catch(e) { toast('Export failed: ' + (e && (e.message || e.code) || e), 6000); }
+    finally { if (btn.isConnected) { btn.disabled = false; btn.textContent = launch ? 'Export launch files' : 'Export working copy'; } }
+  };
+  const bL = h('button', {class:'cae-btn pri', disabled: n ? true : null, onclick(){ run(true, this); }}, 'Export launch files');
+  const bW = h('button', {class:'cae-btn', onclick(){ run(false, this); }}, 'Export working copy');
+  modal.replaceChildren(h('div', {class:'cae-dlg'},
+    h('h3', {}, 'Export'), h('p', {}, 'Both downloads are a .zip with index.html and an img folder.'),
+    h('div', {class:'cae-opt'}, h('b', {}, 'Launch files'),
+      h('p', {}, n ? `Locked: ${n} pre-launch item${n > 1 ? 's' : ''} to fix first.` : 'The live site: editor and check bar removed. Upload both to the client’s hosting.'),
+      n ? h('button', {class:'cae-btn sm', onclick: () => { modal.hidden = true; go({name:'checks'}); }}, 'Show what to fix') : null, bL),
+    h('div', {class:'cae-opt'}, h('b', {}, isMaster() ? 'Working copy (start a new build)' : 'Working copy'),
+      h('p', {}, isMaster() ? 'A fresh, unlocked copy of this template with the editor included. Unzip it into the client\u2019s folder and build there.' : 'Editor included. To keep editing elsewhere, hand over to a colleague, or send to Claude for a pre-launch review.'), bW),
+    h('div', {class:'cae-dlg-x'}, h('button', {class:'cae-btn', onclick: () => { modal.hidden = true; }}, 'Close'))));
+  modal.hidden = false;
+}
+
+/* ---------- open / close ---------- */
+function build(){
+  btnUndo = svgBtn('undo', 'Undo', undo); btnRedo = svgBtn('redo', 'Redo', redo);
+  btnChecks = h('button', {class:'cae-chk', onclick: () => go({name:'checks'})});
+  btnSave = h('button', {class:'cae-btn pri', onclick: save}, 'Save');
+  const seg = h('div', {class:'cae-seg'}, [['desk', 'Desktop'], ['mob', 'Mobile']].map(([k, l]) => h('button', {class: k === pvMode ? 'on' : '', onclick(){ pvMode = k; frames.classList.toggle('mob', k === 'mob'); seg.querySelectorAll('button').forEach(b => b.classList.toggle('on', b === this)); }}, l)));
+  root = h('div', {id:'cae', role:'application', 'aria-label':'Site editor'},
+    h('div', {class:'cae-top'}, h('b', {class:'cae-logo'}, 'Editor'), siteEl = h('span', {class:'cae-site'}), h('div', {class:'cae-sp'}),
+      btnUndo, btnRedo, btnChecks,
+      h('button', {class:'cae-btn cae-mob', onclick(){ root.classList.toggle('pv'); this.textContent = root.classList.contains('pv') ? 'Edit' : 'Preview'; }}, 'Preview'),
+      btnSave, h('button', {class:'cae-btn cae-hide-s', onclick: exportDlg}, 'Export'), svgBtn('x', 'Close editor', close)),
+    h('div', {class:'cae-main'}, panel = h('div', {class:'cae-panel'}),
+      h('div', {class:'cae-stage'}, h('div', {class:'cae-stbar'}, seg, h('span', {}, 'Live preview. Hover a card and click Edit to jump to it.'), h('div', {class:'cae-sp'}),
+        h('button', {class:'cae-btn sm', onclick: exportDlg}, 'Export')), frames = h('div', {class:'cae-frames'}))),
+    h('datalist', {id:'cae-dl-gear'}, ['Automatic', 'Manual', 'CVT', 'DCT'].map(x => h('option', {value:x}))),
+    h('datalist', {id:'cae-dl-fuel'}, ['Petrol', 'Diesel', 'Hybrid', 'Plug-in hybrid', 'Electric'].map(x => h('option', {value:x}))),
+    toastEl = h('div', {class:'cae-toast', hidden:true, role:'status'}),
+    modal = h('div', {class:'cae-modal', hidden:true}));
+  document.body.append(root);
+  document.addEventListener('keydown', e => {
+    if (root.hidden || !(e.metaKey || e.ctrlKey)) return;
+    const k = e.key.toLowerCase();
+    if (k === 's') { e.preventDefault(); save(); return; }
+    if (e.target.closest && e.target.closest('input,textarea,select')) return;
+    if (k === 'z') { e.preventDefault(); e.shiftKey ? redo() : undo(); } else if (k === 'y') { e.preventDefault(); redo(); }
+  });
+  addEventListener('beforeunload', e => { if (root && !root.hidden && isDirty()) { e.preventDefault(); e.returnValue = ''; } });
+}
+function open(){
+  if (!root) {
+    build();
+    S = JSON.parse(document.getElementById('site-data').textContent); INITIAL = SAVED = lastSnap = JSON.stringify(S);
+  }
+  root.hidden = false; document.documentElement.style.overflow = 'hidden';
+  render(true); refreshPreview();
+}
+async function close(){
+  if (isDirty() && !(await ask('Close the editor?', 'You have unsaved changes. They stay in this browser as a draft, so you can restore them next time you open the editor.', 'Close anyway'))) return;
+  root.hidden = true; document.documentElement.style.overflow = '';
+  if (SAVED !== INITIAL) toast('The page behind the editor shows the version it opened with. Reload to see saved changes.', 6000);
+}
+E.open = open;
+E.boot = function(){
+  SITE = window.CASite;
+  if (window.claude && typeof window.claude.use === 'function') {
+    ART = window.claude.use('artifact').catch(() => null); DL = window.claude.use('downloads').catch(() => null);
+  }
+  const bar = document.getElementById('mock-note');
+  const b = document.createElement('button'); b.textContent = 'Open editor'; b.onclick = open;
+  if (bar && !bar.hidden && bar.lastElementChild) { b.className = 'plc-btn cae-open'; bar.lastElementChild.prepend(b); }
+  else { b.className = 'cae-open-fab'; document.body.appendChild(b); }
+  let again = false; try { again = sessionStorage.getItem('cae-open') === '1'; sessionStorage.removeItem('cae-open'); } catch(_) {}
+  if (location.hash === '#edit' || again) open();
+};
+})();
+</script>
+<!--/ca-editor-->
 <script>
 (function(){
 "use strict";
@@ -9839,7 +11167,7 @@ const PH = DATA.pharoah || {};
     $('#ph-hero').innerHTML = `<section class="ph-hero" aria-labelledby="ph-hero-h">
       ${H.title ? `<div class="ph-hero-top"><div>${H.eyebrow ? `<div class="ph-eyebrow">${esc(H.eyebrow)}</div>` : ''}<h1 class="ph-h" id="ph-hero-h">${esc(H.title)}</h1>${H.text ? `<p>${esc(H.text)}</p>` : ''}</div></div>` : `<h1 class="sr" id="ph-hero-h">${esc(D.name)}</h1>`}
       <div class="ph-panels">${(H.panels || []).map((p, i) => `<a class="ph-panel${p.textOff ? ' ph-art' : ''}" href="${esc(p.href)}" aria-label="${esc(p.title)}">${phImg(pick(p), true)}
-        <div class="ph-panel-in"${p.textOff ? ' hidden' : ''}><span class="ph-n">0${i + 1}</span><h2>${esc(p.title)}</h2>${p.text ? `<p>${esc(p.text)}</p>` : ''}
+        <div class="ph-panel-in"${p.textOff ? ' hidden' : ''}><h2>${esc(p.title)}</h2>${p.text ? `<p>${esc(p.text)}</p>` : ''}
           ${p.count !== undefined ? `<span class="ph-cnt num">${p.count === 'all' ? lineCount() : lineCount(p.count)} vehicles</span>` : ''}<span class="ph-cta">${esc(p.cta || 'Enter')} ${arrow}</span></div></a>`).join('')}</div>
     </section>`;
   }
@@ -9858,7 +11186,6 @@ const PH = DATA.pharoah || {};
   const SECIDX = {};
   ((PH.layout || []).filter(x => typeof x === 'string').concat(DATA.sections.map(s => s.id))).forEach(id => { if (!(id in SECIDX) && DATA.sections.some(s => s.id === id)) SECIDX[id] = Object.keys(SECIDX).length + 1; });
   DATA.sections.forEach(s => { const el = document.getElementById(s.id); if (!el) return; const hd = $('.stock-head > div:first-child', el);
-    hd.insertAdjacentHTML('afterbegin', `<span class="ph-idx num" aria-hidden="true">${String(SECIDX[s.id] || '').padStart(2, '0')}</span>`);
     $('.rail-ctl', el).insertAdjacentHTML('afterbegin', `<button type="button" class="ph-viewall" data-ph-cat="${s.finder === false ? '' : esc(s.id)}">View all</button>`); });
 
   /* blocks */
@@ -9867,7 +11194,7 @@ const PH = DATA.pharoah || {};
   const BLOCK = {
     banner,
     marques: b => { const row = hidden => makes.map(([m, n]) => `<button class="ph-mq-item" data-ph-make="${esc(m)}"${hidden ? ' tabindex="-1"' : ''}>${esc(m)}<sup class="num">${n}</sup></button><span class="ph-mq-dot" aria-hidden="true"></span>`).join('');
-      return `<section class="ph-marques" aria-label="${esc(b.title || 'Shop by marque')}"><div class="ph-mq-label"><span class="ph-eyebrow">${esc(b.title || 'Shop by marque')}</span></div>
+      return `<section class="ph-marques" aria-label="${esc(b.title || 'Shop by marque')}">${b.title ? `<div class="ph-mq-label"><span class="ph-eyebrow">${esc(b.title)}</span></div>` : ''}
       <div class="ph-mq" style="--mq-dur:${Math.max(40, makes.length * 3.2)}s"><div class="ph-mq-track"><div class="ph-mq-set">${row(false)}</div><div class="ph-mq-set" aria-hidden="true">${row(true)}</div></div></div></section>`; },
     chapter: b => { if (b.textOff) return banner(b);
       const tiles = (b.jump || []).map(id => { const sc = DATA.sections.find(x => x.id === id); if (!sc) return ''; const v = V[sc.vehicles[0]], k = v && v.images[0];
@@ -9903,7 +11230,7 @@ const PH = DATA.pharoah || {};
       ${b.text ? `<p>${esc(b.text)}</p>` : ''}</div>
       <div class="ph-cu-row">${(b.tiles || []).map((t, i) => { const k = pick(t); return `<a class="ph-cu" href="${esc(t.href || '#')}"${/^https?:/.test(t.href || '') ? ' target="_blank" rel="noopener"' : ''} style="--i:${i}">
         ${k ? `<img class="ph-img lz" data-src="${SRC(k, 'gallery')}" data-orig="${IMG(k)}" data-tone="${tone(k)}" alt="" decoding="async">` : ''}
-        <span class="ph-cu-n num">${String(i + 1).padStart(2, '0')}</span><span class="ph-cu-v">${esc(t.title)}</span>
+        <span class="ph-cu-v">${esc(t.title)}</span>
         <span class="ph-cu-in"><b>${esc(t.title)}</b><span class="ph-cu-p">${esc(t.text)}</span><span class="ph-cu-cta">${esc(t.cta || 'Discover')} ${arrow}</span></span></a>`; }).join('')}</div></section>`
   };
   function concForm(b){
