@@ -6,14 +6,25 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Kanit:wght@400;500;600&display=swap">
 <!--ca-share-->
 <meta name="description" content="Supercars, luxury SUVs, classics and premium pre-owned vehicles at Pharoah Auto Investments, 3 Winnie Mandela Drive, Bryanston, Sandton. Finance, trade-ins and vehicle sourcing.">
+<link rel="canonical" href="https://conversionadvantage00.github.io/pharoah_auto_investments/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Pharoah Auto Investments">
 <meta property="og:title" content="Pharoah Auto Investments | Luxury, supercar &amp; exotic dealer in Bryanston, Sandton">
 <meta property="og:description" content="Supercars, luxury SUVs, classics and premium pre-owned vehicles at Pharoah Auto Investments, 3 Winnie Mandela Drive, Bryanston, Sandton. Finance, trade-ins and vehicle sourcing.">
+<meta property="og:url" content="https://conversionadvantage00.github.io/pharoah_auto_investments/">
+<meta property="og:image" content="https://conversionadvantage00.github.io/pharoah_auto_investments/img/share-pharoah.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:locale" content="en_ZA">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Pharoah Auto Investments | Luxury, supercar &amp; exotic dealer in Bryanston, Sandton">
 <meta name="twitter:description" content="Supercars, luxury SUVs, classics and premium pre-owned vehicles at Pharoah Auto Investments, 3 Winnie Mandela Drive, Bryanston, Sandton. Finance, trade-ins and vehicle sourcing.">
+<meta name="twitter:image" content="https://conversionadvantage00.github.io/pharoah_auto_investments/img/share-pharoah.jpg">
+<link rel="icon" href="img/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta name="theme-color" content="#121316">
 <!--/ca-share-->
 <!--/ca-head-->
 </head><body>
@@ -908,7 +919,14 @@ input[type=range]{accent-color:var(--accent)}
     "note": "",
     "label": "",
     "showChecks": false,
-    "description": "Supercars, luxury SUVs, classics and premium pre-owned vehicles at Pharoah Auto Investments, 3 Winnie Mandela Drive, Bryanston, Sandton. Finance, trade-ins and vehicle sourcing."
+    "description": "Supercars, luxury SUVs, classics and premium pre-owned vehicles at Pharoah Auto Investments, 3 Winnie Mandela Drive, Bryanston, Sandton. Finance, trade-ins and vehicle sourcing.",
+    "url": "https://conversionadvantage00.github.io/pharoah_auto_investments/",
+    "shareImage": "share-pharoah",
+    "icons": {
+      "ico": "favicon.ico",
+      "png": "favicon-32.png",
+      "apple": "apple-touch-icon.png"
+    }
   },
   "theme": {
     "accent": "#D7BE69",
@@ -9549,7 +9567,8 @@ function prelaunchCheck(data){
   { const m = data.meta || {};
     if (!String(m.description || '').trim()) add('Sharing', 'no page description (Google and link previews)');
     if (!String(m.url || '').trim()) add('Sharing', 'live site address not set (needed for link previews)');
-    if (!m.shareImage) add('Sharing', 'no share image (the picture shown when the link is sent on WhatsApp or social)'); }
+    if (!m.shareImage) add('Sharing', 'no share image (the picture shown when the link is sent on WhatsApp or social)');
+    if (!(m.icons && (m.icons.ico || m.icons.png))) add('Sharing', 'no favicon (the icon in the browser tab)'); }
   const crs = (data.settings || {}).carousel || {};
   if (crs.galleryDefault === true && (data.vehicles || []).length >= (crs.galleryAutoAt || 100))
     add('Carousels', `card photo galleries are switched on for the whole site with ${(data.vehicles || []).length} listings: phones can run out of memory. Set them per section instead`);
